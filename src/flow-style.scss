@@ -1,0 +1,104 @@
+/* Full Application CSS for swat-flow-tool */
+
+/* BEGIN | General Application CSS section */
+body {
+  -ms-overflow-style: scrollbar;
+  -webkit-app-region:drag;
+  margin: 0px;
+  padding: 0px;
+  width: 450px;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input[type="text"],
+button,
+a,
+li,
+textarea {
+	-webkit-app-region: no-drag;
+}
+
+::-webkit-scrollbar {
+  display: none;
+  }
+/* END | General Application CSS section */
+
+/* BEGIN | Primary Application Vue CSS */
+#app {
+  position: relative;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  width: 450px;
+  height: 700px;
+  top: 0px;
+}
+
+#app input[type="submit"],
+#app input[type="reset"],
+#app input[type="button"],
+#app input[type="text"],
+#app button,
+#app a,
+#app li,
+#app textarea {
+	-webkit-app-region: no-drag;
+}
+/* END | Primary Application Vue CSS */
+
+/* BEGIN | Application top icon links CSS */
+#app-top-links {
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  height: 30px;
+  width: 100%;
+  border: 0px;
+}
+/* END | Application top icon links CSS */
+
+/* BEGIN | App top nav CSS */
+nav {
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+/* END | App top nav CSS */
+
+/* BEGIN | App footer CSS */
+footer {
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  border-top: 1px solid hsl(0, 0%, 71%);
+  bottom: 0px;
+  height: 70px;
+  width: 100%;
+  text-align: center;
+}
+/* END | App footer CSS */
+
+/* BEGIN | Swat Flow Vue CSS */
+#swat-deck {
+  position: relative;
+  top: 0px;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  height: 545px;
+}
+
+#flow-start-message {
+  position: relative;
+  margin: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+/* END | Swat Flow Vue CSS */
