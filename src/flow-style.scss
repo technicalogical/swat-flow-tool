@@ -1,5 +1,5 @@
 /* Full Application CSS for swat-flow-tool */
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 /* BEGIN | General Application CSS section */
 body {
   -ms-overflow-style: scrollbar;
@@ -7,12 +7,15 @@ body {
   margin: 0px;
   padding: 0px;
   width: 450px;
+  font-family: 'Open Sans', sans-serif;
+  border: 1px solid #00b8e6;
 }
 
 input[type="submit"],
 input[type="reset"],
 input[type="button"],
 input[type="text"],
+input[type="tel"],
 button,
 a,
 li,
@@ -25,7 +28,7 @@ textarea {
   }
 /* END | General Application CSS section */
 
-/* BEGIN | Primary Application Vue CSS */
+/* BEGIN | Primary Vue Application Vue CSS */
 #app {
   position: relative;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -36,7 +39,7 @@ textarea {
   padding: 0px;
   border: 0px;
   width: 450px;
-  height: 700px;
+  height: 698px;
   top: 0px;
 }
 
@@ -44,13 +47,14 @@ textarea {
 #app input[type="reset"],
 #app input[type="button"],
 #app input[type="text"],
+#app input[type="tel"],
 #app button,
 #app a,
 #app li,
 #app textarea {
 	-webkit-app-region: no-drag;
 }
-/* END | Primary Application Vue CSS */
+/* END | Primary Vue Application Vue CSS */
 
 /* BEGIN | Application top icon links CSS */
 #app-top-links {
@@ -62,6 +66,20 @@ textarea {
   border: 0px;
 }
 /* END | Application top icon links CSS */
+
+/* BEGIN | Primary App Deck CSS */
+#prime-app-deck {
+  position: relative;
+  display: block;
+  margin: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  border: 0px;
+  height: 600px;
+  width: 450px;
+}
+/* END | Primary App Deck CSS */
 
 /* BEGIN | App top nav CSS */
 nav {
@@ -82,6 +100,19 @@ footer {
   height: 70px;
   width: 100%;
   text-align: center;
+  font-size: 20px;
+}
+
+footer img {
+  position: relative;
+  top: 7px;
+}
+
+#app-vers {
+  position: absolute;
+  right: 10px;
+  bottom: 2px;
+  font-size: 10px;
 }
 /* END | App footer CSS */
 
@@ -102,3 +133,35 @@ footer {
   margin-right: 20px;
 }
 /* END | Swat Flow Vue CSS */
+
+/* BEGIN | Swat Note Vue CSS */
+#swat-note-input {
+  position: relative;
+  margin: 0px;
+  margin-left: 20px;
+  padding: 0px;
+  border: 0px;
+  width: 70%;
+  height: 300px;
+}
+
+#sitch-text {
+  margin-bottom: 30px;
+}
+
+#call-notes {
+  position: relative;
+  margin: 0px;
+  margin-left: 20px;
+  padding: 0px;
+  border: 0px;
+  width: 70%;
+  height: 240px;
+}
+
+#call-notes p {
+  margin: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+/* END | Swat Note Vue CSS */

@@ -2,7 +2,15 @@
   
   <!-- BEGIN - Primary application deck -->
   <div id="flow-deck">
-
+    <!-- BEGIN - Application Primary nav section -->
+    <nav class="tabs is-small">
+      <ul>
+        <li><router-link to="/">Home</router-link></li>
+        <li class="is-active"><router-link to="/SwatFlow">Swat Flow</router-link></li>
+        <li><router-link to="/SwatNote">Swat Note</router-link></li>
+      </ul>  
+    </nav>
+    <!-- END - Application Primary nav section -->
     <!-- 500 Error / WSOD Text -->
     <article id="wsod-message" class="message is-danger">
       <div class="message-header">
