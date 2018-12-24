@@ -1,7 +1,5 @@
 <template>
-  
-  <!-- BEGIN - Primary application deck -->
-  <div id="flow-deck">
+  <div id="flow-deck-two">
     <!-- BEGIN - Application Primary nav section -->
     <nav class="tabs is-small">
       <ul>
@@ -23,15 +21,28 @@
     
     <!-- BEGIN 500 Error flow section -->
     <div class="content has-text-centered" id="flow">
-      <div class="content is-medium">
-        <p>Where is the site error happening?</p>
-      </div>
-      <div id="switch-set" class="content buttons are-medium">
-        <router-link class="button is-dark" to="/flow/fivehundrederror/Fos">Front of customer website</router-link>
-        <router-link class="button is-dark" to="/flow/fivehundrederror/Wpad">On wp-admin page</router-link>
-      </div>
+      <!-- BEGIN - Primary application deck -->
+      <div class="content is-medium" id="flow-deck-two">
+      <p>Can you load a test file from the hosting?</p>
+      <p class="buttons">
+          <router-link to="/flow/fivehundrederror/FosYes" class="button is-light">
+            <span class="icon has-text-success">
+              <i class="fas fa-check-circle"></i>
+            </span>
+            <span><strong>Yes</strong>. Test file loads</span>
+          </router-link>  
+          <router-link to="/flow/fivehundrederror/FosNo" class="button is-light">
+            <span class="icon has-text-danger">
+              <i class="fas fa-exclamation-circle"></i>
+            </span>
+            <span><strong>No</strong>. Test file does not load</span>
+          </router-link>
+        </p>
+      </div> 
+      <!-- END - Primary application deck -->
       
       <router-view/>
+      
     </div>
     <!-- END 500 Error flow section -->
 
@@ -67,11 +78,12 @@ export default {
   position: relative;
   display: block;
   margin: 0px;
+  margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
   padding: 0px;
   border: 0px;
-  width: 90%;
+  width: 85%;
   height: 340px;
   top: 10px;
 }

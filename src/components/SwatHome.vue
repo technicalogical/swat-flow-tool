@@ -16,12 +16,40 @@
 
       <!-- Opening Comments for Swat Flow Tool -->
       <div class="notification is-success is-small">
-        <button class="delete"></button>
-        Primar lorem ipsum dolor sit amet, consectetur
-        adipiscing elit lorem ipsum dolor. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Sit amet,
-        consectetur adipiscing elit
+      
+        <strong>Welcome to the S.W.A.T. Flow Tool</strong><br>
+        This tool is provided to help you more accuratley navigate your call inorder to be as productive for your customer as possible.
+
       </div>
       <!-- END Opening comments for Swat Flow Tool -->
+
+      <!-- BEGIN Home page primary links section -->
+      <div id="home-links">
+        <h1 class="title is-4">Flow Tool Quick Links:</h1>
+        <p class="buttons">
+          <a class="button is-large is-success">
+            <span class="icon is-small">
+              <i class="fas fa-file-alt"></i>
+            </span>
+          </a>
+          <a class="button is-large is-success">
+          <span class="icon">
+            <i class="fas fa-clipboard-list"></i>
+          </span>
+          </a>
+          <a class="button is-large is-success">
+            <span class="icon is-medium">
+              <i class="fas fa-columns"></i>
+            </span>
+          </a>
+          <a class="button is-large is-success">
+            <span class="icon is-medium">
+              <i class="fas fa-heading"></i>
+            </span>
+          </a>
+        </p>
+      </div>
+      <!-- END Home page primary links section -->
       
       <router-view/>
     </div>

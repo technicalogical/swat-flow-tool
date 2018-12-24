@@ -8,6 +8,11 @@ import FourThree from '@/components/flow/FourThree'
 import FourFour from '@/components/flow/FourFour'
 import FiveThree from '@/components/flow/FiveThree'
 import FormError from '@/components/flow/FormError'
+import No from '@/components/flow/No'
+import Fos from '@/components/flow/fivehundrederror/Fos'
+import FosYes from '@/components/flow/fivehundrederror/FosYes'
+import FosNo from '@/components/flow/fivehundrederror/FosNo'
+import Wpad from '@/components/flow/fivehundrederror/Wpad'
 
 Vue.use(Router)
 
@@ -29,9 +34,34 @@ export default new Router({
       component: SwatNote
     },
     {
+      path: '/flow/No',
+      name: 'No',
+      component: No
+    },
+    {
       path: '/flow/FiveError',
       name: 'FiveError',
       component: FiveError,
+    },
+    {
+      path: '/flow/fivehundrederror/Fos',
+      name: 'Fos',
+      component: Fos
+    },
+    {
+      path: '/flow/fivehundrederror/FosYes',
+      name: 'FosYes',
+      component: FosYes
+    },
+    {
+      path: '/flow/fivehundrederror/FosNo',
+      name: 'FosNo',
+      component: FosNo
+    },
+    {
+      path: '/flow/fivehundrederror/Wpad',
+      name: 'Wpad',
+      component: Wpad
     },
     {
       path: '/flow/FourThree',

@@ -8,7 +8,7 @@ body {
   padding: 0px;
   width: 450px;
   font-family: 'Open Sans', sans-serif;
-  border: 1px solid #00b8e6;
+  border: 1px solid hsl(217, 71%, 53%);
 }
 
 input[type="submit"],
@@ -60,6 +60,7 @@ textarea {
 #app-top-links {
   position: relative;
   margin: 0px;
+  right: 2px;
   padding: 0px;
   height: 30px;
   width: 100%;
@@ -85,6 +86,10 @@ textarea {
 nav {
   position: relative;
   margin: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 98%;
   padding: 0px;
   border: 0px;
 }
@@ -105,7 +110,7 @@ footer {
 
 footer img {
   position: relative;
-  top: 7px;
+  top: 2px;
 }
 
 #app-vers {
@@ -115,6 +120,16 @@ footer img {
   font-size: 10px;
 }
 /* END | App footer CSS */
+
+/* BEGIN | App home page CSS */
+#home-links {
+  position: relative;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 250px;
+}
+/* BEGIN | App home page CSS */
 
 /* BEGIN | Swat Flow Vue CSS */
 #swat-deck {

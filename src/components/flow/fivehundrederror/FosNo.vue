@@ -1,7 +1,5 @@
 <template>
-  
-  <!-- BEGIN - Primary application deck -->
-  <div id="flow-deck">
+  <div id="flow-deck-two">
     <!-- BEGIN - Application Primary nav section -->
     <nav class="tabs is-small">
       <ul>
@@ -22,15 +20,16 @@
 
     
     <!-- BEGIN 500 Error flow section -->
-    <div class="content has-text-centered" id="flow">
-      <div class="content is-medium">
-        <p>Where is the site error happening?</p>
+    <div class="content has-text-centered" id="flow">    
+      <div class="notification is-danger">
+        <strong>STOP HERE</strong>.
       </div>
-      <div id="switch-set" class="content buttons are-medium">
-        <router-link class="button is-dark" to="/flow/fivehundrederror/Fos">Front of customer website</router-link>
-        <router-link class="button is-dark" to="/flow/fivehundrederror/Wpad">On wp-admin page</router-link>
-      </div>
-      
+      <article class="message is-info">
+        <div class="message-body">
+          Offer WPPS (Wordpress Premium support) to help the customer overcome their issue.
+        </div>
+      </article>
+      <router-link to="/SwatFlow" class="button is-dark is-fullwidth">Return to start</router-link>
       <router-view/>
     </div>
     <!-- END 500 Error flow section -->
@@ -42,7 +41,7 @@
 
 <script>
 export default {
-  name: 'FiveError'
+
 }
 </script>
 
@@ -67,11 +66,12 @@ export default {
   position: relative;
   display: block;
   margin: 0px;
+  margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
   padding: 0px;
   border: 0px;
-  width: 90%;
+  width: 85%;
   height: 340px;
   top: 10px;
 }

@@ -37,8 +37,8 @@
   
     <!-- BEGIN - Application footer section -->
       <footer>
-        <img src="./assets/icons/png/64x64.png" height="60px" width="60px" />
-        <p id="app-vers">Swat Flow Tool ver 1.0.8 (Windu)</p>  
+        <img src="./assets/icons/png/64x64.png" />
+        <p id="app-vers" class="is-italic">Swat Flow Tool ver 1.0.9 (Windu)</p>  
       </footer>
     <!-- END - Application footer section -->
   </div>

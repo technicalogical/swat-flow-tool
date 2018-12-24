@@ -14,7 +14,9 @@
     <!-- END - Application Primary nav section -->
 
     <!-- BEGIN Swat Note input section -->
+    
     <div id="swat-note-input">
+      <p class="help is-danger">***NOTE DO NOT STORE CUSTOMER DATA***</p>
       <div class="field">
         <div class="control has-icons-left has-icons-right">
           <input v-model="name" class="input is-small" type="text" placeholder="Customer Name" >

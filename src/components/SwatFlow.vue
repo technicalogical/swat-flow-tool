@@ -15,7 +15,7 @@
     <div id="flow-start-message">
 
       <!-- Opening Comments for Swat Flow Chart -->
-      <article class="message is-info">
+      <article class="message is-small is-dark">
         <div class="message-body">
           This is the hosting <strong>Swat Flow Chart</strong>. It is designed to guide you quickly through the five most common issues our customers have when calling in. This Swat Flow Chart can also be  found at <strong>x.co/swat</strong>. Start with your options below to begin to work your way throgh the flow chart.
         </div>
