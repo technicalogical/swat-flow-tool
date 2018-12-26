@@ -5,27 +5,23 @@
     <!-- BEGIN - Application Primary nav section -->
     <nav class="tabs is-small">
       <ul>
-        <li class="is-active"><router-link to="/">Home</router-link></li>
+        <li><router-link to="/">Home</router-link></li>
         <li><router-link to="/SwatFlow">Swat Flow</router-link></li>
         <li><router-link to="/SwatNote">Swat Note</router-link></li>
       </ul>  
     </nav>
     <!-- END - Application Primary nav section -->
     
-    <!-- START - Message of Swat FLow Chart -->
-    <div class="content " id="flow-start-message">
-
-      <!-- BEGIN Home page logo section -->
-      <div id="logo-main" class="content">
-        <img src="../assets/images/swatflowtool-full.png" width="180">
-      </div>
-      <!-- END Home page logo section -->
-    </div>
+    
     <!-- BEGIN Start button -->
     <div id="get-start" class="field is-grouped">
       <p class="control">
-        <router-link to="/SwatMenu" class="button is-small is-fullwidth is-success">
-          <strong>GET STARTED</strong>
+        <router-link to="/SwatFlow" class="button is-small is-fullwidth is-success">
+          <strong>S.W.A.T. Flow</strong>
+        </router-link>
+        <br>
+        <router-link to="/SwatNote" class="button is-small is-fullwidth is-success">
+          <strong>S.W.A.T. Note</strong>
         </router-link>
       </p>
     </div>

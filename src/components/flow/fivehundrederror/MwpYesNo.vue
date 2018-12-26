@@ -1,7 +1,5 @@
 <template>
-  
-  <!-- BEGIN - Primary application deck -->
-  <div id="flow-deck">
+<div id="flow-deck-two">
     <!-- BEGIN - Application Primary nav section -->
     <nav class="tabs is-small">
       <ul>
@@ -12,38 +10,40 @@
     </nav>
     <!-- END - Application Primary nav section -->
     
-    <!-- BEGIN - 403 Website Errors Text -->
+    <!-- 500 Error / WSOD Text -->
     <article id="wsod-message" class="message is-danger">
       <div class="notification is-danger">
-        <strong>403</strong> Website Error
+        <strong>500 Error / W.S.O.D. (White Screen of Death)</strong>
       </div>
     </article>
-    <!-- END - 403 Website Errors Text -->
+    <!-- END - 500 Error / WSOD Text -->
 
     
-    <!-- BEGIN 403 Error flow section -->
+    <!-- BEGIN 500 Error flow section -->
     <div class="content has-text-centered" id="flow">
-      <div class="content is-medium">
-        <p>Is there a proper and correct index file?</p>
-      </div>
+      <!-- BEGIN - Primary application deck -->
+      <div class="content is-medium" id="flow-deck-two">
+      <p>Does the wp-config file have “extra” coding that you do not recognize?</p>
       <p class="buttons">
-          <router-link to="/flow/fourothree/IndexYes" class="button is-light">
+          <router-link to="/flow/fivehundrederror/MwpYesNoYes" class="button is-light">
             <span class="icon has-text-success">
               <i class="fas fa-check-circle"></i>
             </span>
-            <span><strong>Yes</strong>. There is a proper index file.</span>
+            <span><strong>Yes</strong>. There is extra code.</span>
           </router-link>  
-          <router-link to="/flow/fourothree/IndexNo" class="button is-light">
+          <router-link to="/flow/fivehundrederror/MwpYesNoNo" class="button is-light">
             <span class="icon has-text-danger">
               <i class="fas fa-exclamation-circle"></i>
             </span>
-            <span><strong>No</strong>. The index file is missing.</span>
+            <span><strong>No</strong>. wp-config is normal.</span>
           </router-link>
         </p>
+      </div> 
+      <!-- END - Primary application deck -->
       
       <router-view/>
     </div>
-    <!-- END 403 Error flow section -->
+    <!-- END 500 Error flow section -->
 
   </div>
   <!-- END - Primary application deck -->
@@ -52,7 +52,7 @@
 
 <script>
 export default {
-  
+  name: 'FiveError'
 }
 </script>
 
@@ -77,12 +77,24 @@ export default {
   position: relative;
   display: block;
   margin: 0px;
+  margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
   padding: 0px;
   border: 0px;
-  width: 90%;
+  width: 85%;
   height: 340px;
   top: 10px;
+}
+
+#switch-set {
+  position: relative;
+  text-align: center;
+  display: block;
+  margin: 0px;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
 }
 </style>

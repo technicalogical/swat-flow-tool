@@ -12,38 +12,38 @@
     </nav>
     <!-- END - Application Primary nav section -->
     
-    <!-- BEGIN - 403 Website Errors Text -->
+    <!-- 404 Error / WSOD Text -->
     <article id="wsod-message" class="message is-danger">
       <div class="notification is-danger">
-        <strong>403</strong> Website Error
+        <strong>404</strong> Website Error
       </div>
     </article>
-    <!-- END - 403 Website Errors Text -->
+    <!-- END - 404 Error / WSOD Text -->
 
     
-    <!-- BEGIN 403 Error flow section -->
+    <!-- BEGIN 404 Error flow section -->
     <div class="content has-text-centered" id="flow">
       <div class="content is-medium">
-        <p>Is there a proper and correct index file?</p>
+        <p>Is there a valid .htaccess file present?</p>
       </div>
       <p class="buttons">
-          <router-link to="/flow/fourothree/IndexYes" class="button is-light">
+          <router-link to="/flow/fourofour/WpYesFinalStop" class="button is-light">
             <span class="icon has-text-success">
               <i class="fas fa-check-circle"></i>
             </span>
-            <span><strong>Yes</strong>. There is a proper index file.</span>
+            <span><strong>Yes</strong>. There is an .htaccess file.</span>
           </router-link>  
-          <router-link to="/flow/fourothree/IndexNo" class="button is-light">
+          <router-link to="/flow/fourofour/WpYesNo" class="button is-light">
             <span class="icon has-text-danger">
               <i class="fas fa-exclamation-circle"></i>
             </span>
-            <span><strong>No</strong>. The index file is missing.</span>
+            <span><strong>No</strong>. The .htaccess file is not present</span>
           </router-link>
         </p>
       
       <router-view/>
     </div>
-    <!-- END 403 Error flow section -->
+    <!-- END 404 Error flow section -->
 
   </div>
   <!-- END - Primary application deck -->

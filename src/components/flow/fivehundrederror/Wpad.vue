@@ -23,19 +23,19 @@
     <div class="content has-text-centered" id="flow">
       <!-- BEGIN - Primary application deck -->
       <div class="content is-medium" id="flow-deck-two">
-      <p>Can you load a test file from the hosting?</p>
+      <p>Inspect customer's file structure. Do you se any strange files or obvious malware?</p>
       <p class="buttons">
-          <router-link to="/flow/fivehundrederror/FosYes" class="button is-light">
+          <router-link to="/flow/fivehundrederror/WpadYes" class="button is-light">
             <span class="icon has-text-success">
               <i class="fas fa-check-circle"></i>
             </span>
-            <span><strong>Yes</strong>. Test file loads</span>
+            <span><strong>Yes</strong>. There are strange file or malware.</span>
           </router-link>  
-          <router-link to="/flow/fivehundrederror/FosNo" class="button is-light">
+          <router-link to="/flow/fivehundrederror/WpadNo" class="button is-light">
             <span class="icon has-text-danger">
               <i class="fas fa-exclamation-circle"></i>
             </span>
-            <span><strong>No</strong>. Test file does not load</span>
+            <span><strong>No</strong>. There are no strange files.</span>
           </router-link>
         </p>
       </div> 

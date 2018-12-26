@@ -1,5 +1,6 @@
 // ./flow.js
 const {app, BrowserWindow} = require('electron')
+var path = require('path')
 
 let win = null;
 
@@ -13,7 +14,8 @@ app.on('ready', function () {
     minHeigth: 700,
     maxWidth: 450,
     maxHeight: 700,
-    backgroundColor: '#ffffff'
+    backgroundColor: '#fff',
+    icon: path.join(__dirname, 'assets/icons/png/64x64.png')
   });
 
   // Specify entry point to default entry point of vue.js

@@ -1,5 +1,5 @@
 <template>
-  <div id="flow-deck-two">
+<div id="flow-deck-two">
     <!-- BEGIN - Application Primary nav section -->
     <nav class="tabs is-small">
       <ul>
@@ -20,29 +20,17 @@
 
     
     <!-- BEGIN 500 Error flow section -->
-    <div class="content has-text-centered" id="flow">
-      <!-- BEGIN - Primary application deck -->
-      <div class="content is-medium" id="flow-deck-two">
-      <p>Can you load a test file from the hosting?</p>
-      <p class="buttons">
-          <router-link to="/flow/fivehundrederror/FosYes" class="button is-light">
-            <span class="icon has-text-success">
-              <i class="fas fa-check-circle"></i>
-            </span>
-            <span><strong>Yes</strong>. Test file loads</span>
-          </router-link>  
-          <router-link to="/flow/fivehundrederror/FosNo" class="button is-light">
-            <span class="icon has-text-danger">
-              <i class="fas fa-exclamation-circle"></i>
-            </span>
-            <span><strong>No</strong>. Test file does not load</span>
-          </router-link>
-        </p>
-      </div> 
-      <!-- END - Primary application deck -->
-      
+    <div class="content has-text-centered" id="flow">    
+      <div class="notification is-danger">
+        <strong>STOP HERE</strong>.
+      </div>
+      <article class="message is-small is-success">
+        <div class="message-body">
+          Sell WPPS (Wordpress Premium Support) in order to help customer fix plugin and/or theme issues.
+        </div>
+      </article>
+      <router-link to="/SwatFlow" class="button is-dark is-fullwidth">Return to start</router-link>
       <router-view/>
-      
     </div>
     <!-- END 500 Error flow section -->
 
@@ -53,7 +41,7 @@
 
 <script>
 export default {
-  name: 'FiveError'
+
 }
 </script>
 

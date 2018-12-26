@@ -1,5 +1,14 @@
 /* Full Application CSS for swat-flow-tool */
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 /* BEGIN | General Application CSS section */
 body {
   -ms-overflow-style: scrollbar;
@@ -9,6 +18,10 @@ body {
   width: 450px;
   font-family: 'Open Sans', sans-serif;
   border: 1px solid hsl(217, 71%, 53%);
+}
+
+html{
+  font-family: 'Open Sans', sans-serif;
 }
 
 input[type="submit"],
@@ -110,13 +123,15 @@ footer {
 
 footer img {
   position: relative;
-  top: 2px;
+  top: 10px;
 }
 
 #app-vers {
-  position: absolute;
-  right: 10px;
-  bottom: 2px;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  top: 8px;
   font-size: 10px;
 }
 /* END | App footer CSS */
@@ -141,11 +156,46 @@ footer img {
   height: 545px;
 }
 
+#flow {
+  position: relative;
+  display: block;
+  margin: 0px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  border: 0px;
+  width: 85%;
+  height: 340px;
+  top: 10px;
+}
+
 #flow-start-message {
   position: relative;
   margin: 0px;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+#logo-main {
+  position: relative;
+  text-align: center;
+  top: 70px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0px;
+}
+
+#get-start {
+  position: relative;
+  width: 50%;
+  text-align: center;
+  top: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0px;
 }
 /* END | Swat Flow Vue CSS */
 

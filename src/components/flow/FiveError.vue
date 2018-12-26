@@ -26,12 +26,23 @@
       <div class="content is-medium">
         <p>Where is the site error happening?</p>
       </div>
-      <div id="switch-set" class="content buttons are-medium">
-        <router-link class="button is-dark" to="/flow/fivehundrederror/Fos">Front of customer website</router-link>
-        <router-link class="button is-dark" to="/flow/fivehundrederror/Wpad">On wp-admin page</router-link>
-      </div>
+      <p class="buttons">
+        <router-link to="/flow/fivehundrederror/Fos" class="button is-light">
+          <span class="icon has-text-success">
+            <i class="fas fa-play-circle"></i>
+          </span>
+          <span><strong>F.O.S.</strong> Front of customer website</span>
+        </router-link>  
+        <router-link to="/flow/fivehundrederror/Wpad" class="button is-light">
+          <span class="icon has-text-success">
+            <i class="fas fa-play-circle"></i>
+          </span>
+          <span><strong>Wp-admin</strong> On customer login page</span>
+        </router-link>
+      </p>
       
       <router-view/>
+
     </div>
     <!-- END 500 Error flow section -->
 

@@ -11,11 +11,6 @@
     <!-- BEGIN - Application top links section -->
     <div id="app-top-links">
       <p class="buttons is-right">
-        <a id="min-btn" class="button is-small is-white">
-          <span class="icon">
-            <i class="fas fa-minus fa-m"></i>
-          </span>
-        </a>
         <a id="close-btn" onclick="self.close()" class="button is-small is-white">
           <span class="icon">
             <i class="fas fa-times fa-m"></i>
@@ -37,8 +32,8 @@
   
     <!-- BEGIN - Application footer section -->
       <footer>
-        <img src="./assets/icons/png/64x64.png" />
-        <p id="app-vers" class="is-italic">Swat Flow Tool ver 1.0.9 (Windu)</p>  
+        <img src="./assets/images/swatflowtool-short.png" width="200"/>
+        <p id="app-vers" class="is-italic">SWAT Flow Tool Alpha ver <strong>1.0.11</strong> (Windu)</p>  
       </footer>
     <!-- END - Application footer section -->
   </div>
@@ -46,7 +41,8 @@
 
 <script>
 export default {
-  name: 'App'
+  
 }
+
 </script>
 <style src="./flow-style.scss" ></style>
