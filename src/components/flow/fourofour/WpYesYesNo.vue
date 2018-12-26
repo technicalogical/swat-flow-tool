@@ -1,7 +1,5 @@
 <template>
-  
-  <!-- BEGIN - Primary application deck -->
-  <div id="flow-deck">
+  <div id="flow-deck-two">
     <!-- BEGIN - Application Primary nav section -->
     <nav class="tabs is-small">
       <ul>
@@ -22,25 +20,16 @@
 
     
     <!-- BEGIN 404 Error flow section -->
-    <div class="content has-text-centered" id="flow">
-      <div class="content is-medium">
-        <p>Is this a Wordpress website?</p>
+    <div class="content has-text-centered" id="flow">    
+      <div class="notification is-danger">
+        <strong>STOP HERE</strong>.
       </div>
-      <p class="buttons">
-          <router-link to="/flow/fourofour/WpYes" class="button is-light">
-            <span class="icon has-text-success">
-              <i class="fas fa-check-circle"></i>
-            </span>
-            <span><strong>Yes</strong>. This is a Wordpress Website</span>
-          </router-link>  
-          <router-link to="/flow/fourofour/WpYesNo" class="button is-light">
-            <span class="icon has-text-danger">
-              <i class="fas fa-exclamation-circle"></i>
-            </span>
-            <span><strong>No</strong>. This not a Wordpress based Website.</span>
-          </router-link>
-        </p>
-      
+      <article class="message is-info">
+        <div class="message-body">
+          Transfer customer to a Teir 2 agent for further troubleshooting.
+        </div>
+      </article>
+      <router-link to="/SwatFlow" class="button is-dark is-fullwidth">Return to start</router-link>
       <router-view/>
     </div>
     <!-- END 404 Error flow section -->
@@ -52,7 +41,7 @@
 
 <script>
 export default {
-  
+
 }
 </script>
 
@@ -77,11 +66,12 @@ export default {
   position: relative;
   display: block;
   margin: 0px;
+  margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
   padding: 0px;
   border: 0px;
-  width: 90%;
+  width: 85%;
   height: 340px;
   top: 10px;
 }

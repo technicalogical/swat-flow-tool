@@ -13,7 +13,7 @@
     <!-- BEGIN - 404 Website Error Text -->
     <article id="wsod-message" class="message is-danger">
       <div class="notification is-danger">
-        <strong>403</strong> Website Error
+        <strong>404</strong> Website Error
       </div>
     </article>
     <!-- END - 404 Website Error Text -->

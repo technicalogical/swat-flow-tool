@@ -24,20 +24,20 @@
     <!-- BEGIN 404 Error flow section -->
     <div class="content has-text-centered" id="flow">
       <div class="content is-medium">
-        <p>Is this a Wordpress website?</p>
+        <p>Can you load <strong>geoff.php</strong> and view it in browser after disabling control files?</p>
       </div>
       <p class="buttons">
-          <router-link to="/flow/fourofour/WpYes" class="button is-light">
+          <router-link to="/flow/fourofour/WpGeoffYesStop" class="button is-light">
             <span class="icon has-text-success">
               <i class="fas fa-check-circle"></i>
             </span>
-            <span><strong>Yes</strong>. This is a Wordpress Website</span>
+            <span><strong>Yes</strong>. geoff.php loads in browser</span>
           </router-link>  
-          <router-link to="/flow/fourofour/WpYesNo" class="button is-light">
+          <router-link to="/flow/fourofour/WpGeoffNoStop" class="button is-light">
             <span class="icon has-text-danger">
               <i class="fas fa-exclamation-circle"></i>
             </span>
-            <span><strong>No</strong>. This not a Wordpress based Website.</span>
+            <span><strong>No</strong>. geoff.php does not load in browser</span>
           </router-link>
         </p>
       

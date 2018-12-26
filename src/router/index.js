@@ -30,8 +30,33 @@ import IndexNo from '@/components/flow/fourothree/IndexNo'
 import IndexYesNo from '@/components/flow/fourothree/IndexYesNo'
 import WpYes from '@/components/flow/fourofour/WpYes'
 import WpYesYes from '@/components/flow/fourofour/WpYesYes'
+import WpYesNo from '@/components/flow/fourofour/WpYesNo'
+import WpYesYesNo from '@/components/flow/fourofour/WpYesYesNo'
 import WpYesYesFinal from '@/components/flow/fourofour/WpYesYesFinal'
 import WpNo from '@/components/flow/fourofour/WpNo'
+import WpGeoffYes from '@/components/flow/fourofour/WpGeoffYes'
+import WpGeoffNo from '@/components/flow/fourofour/WpGeoffNo'
+import WpGeoffYesStop from '@/components/flow/fourofour/WpGeoffYesStop'
+import WpGeoffNoStop from '@/components/flow/fourofour/WpGeoffNoStop'
+import MwpY from '@/components/flow/fiveothree/mwp/MwpY'
+import MwpYyes from '@/components/flow/fiveothree/mwp/MwpYyes'
+import MwpYyesFinal from '@/components/flow/fiveothree/mwp/MwpYyesFinal'
+import MwpYno from '@/components/flow/fiveothree/mwp/MwpYno'
+import MwpYnoFinal from '@/components/flow/fiveothree/mwp/MwpYnoFinal'
+import WinYes from '@/components/flow/fiveothree/win/WinYes'
+import WinYesY from '@/components/flow/fiveothree/win/WinYesY'
+import WinYesYyes from '@/components/flow/fiveothree/win/WinYesYyes'
+import WinYesYno from '@/components/flow/fiveothree/win/WinYesYno'
+import WinYesYnoY from '@/components/flow/fiveothree/win/WinYesYnoY'
+import WinYesYnoN from '@/components/flow/fiveothree/win/WinYesYnoN'
+import WinYesN from '@/components/flow/fiveothree/win/WinYesN'
+import LinYes from '@/components/flow/fiveothree/linux/LinYes'
+import LinYesY from '@/components/flow/fiveothree/linux/LinYesY'
+import LinYesYyes from '@/components/flow/fiveothree/linux/LinYesYyes'
+import LinYesYno from '@/components/flow/fiveothree/linux/LinYesYno'
+import LinYesYnoYes from '@/components/flow/fiveothree/linux/LinYesYnoYes'
+import LinYesYnoD from '@/components/flow/fiveothree/linux/LinYesYnoD'
+import LinYesN from '@/components/flow/fiveothree/linux/LinYesN'
 
 Vue.use(Router)
 
@@ -178,6 +203,16 @@ export default new Router({
       component: WpYesYes,
     },
     {
+      path: '/flow/fourofour/WpYesNo',
+      name: 'WpYesNo',
+      component: WpYesNo,
+    },
+    {
+      path: '/flow/fourofour/WpYesYesNo',
+      name: 'WpYesYesNo',
+      component: WpYesYesNo,
+    },
+    {
       path: '/flow/fourofour/WpYesYesFinal',
       name: 'WpYesYesFinal',
       component: WpYesYesFinal,
@@ -188,9 +223,124 @@ export default new Router({
       component: WpNo,
     },
     {
+      path: '/flow/fourofour/WpGeoffYes',
+      name: 'WpGeoffYes',
+      component: WpGeoffYes,
+    },
+    {
+      path: '/flow/fourofour/WpGeoffNo',
+      name: 'WpGeoffNo',
+      component: WpGeoffNo,
+    },
+    {
+      path: '/flow/fourofour/WpGeoffYesStop',
+      name: 'WpGeoffYesStop',
+      component: WpGeoffYesStop,
+    },
+    {
+      path: '/flow/fourofour/WpGeoffNoStop',
+      name: 'WpGeoffNoStop',
+      component: WpGeoffNoStop,
+    },
+    {
       path: '/flow/FiveThree',
       name: 'FiveThree',
       component: FiveThree,
+    },
+    {
+      path: '/flow/fiveothree/mwp/MwpY',
+      name: 'MwpY',
+      component: MwpY,
+    },
+    {
+      path: '/flow/fiveothree/mwp/MwpYyes',
+      name: 'MwpYyes',
+      component: MwpYyes,
+    },
+    {
+      path: '/flow/fiveothree/mwp/MwpYyesFinal',
+      name: 'MwpYyesFinal',
+      component: MwpYyesFinal,
+    },
+    {
+      path: '/flow/fiveothree/mwp/MwpYno',
+      name: 'MwpYno',
+      component: MwpYno,
+    },
+    {
+      path: '/flow/fiveothree/mwp/MwpYnoFinal',
+      name: 'MwpYnoFinal',
+      component: MwpYnoFinal,
+    },
+    {
+      path: '/flow/fiveothree/win/WinYes',
+      name: 'WinYes',
+      component: WinYes,
+    },
+    {
+      path: '/flow/fiveothree/win/WinYesY',
+      name: 'WinYesY',
+      component: WinYesY,
+    },
+    {
+      path: '/flow/fiveothree/win/WinYesYyes',
+      name: 'WinYesYyes',
+      component: WinYesYyes,
+    },
+    {
+      path: '/flow/fiveothree/win/WinYesYno',
+      name: 'WinYesYno',
+      component: WinYesYno,
+    },
+    {
+      path: '/flow/fiveothree/win/WinYesYnoY',
+      name: 'WinYesYnoY',
+      component: WinYesYnoY,
+    },
+    {
+      path: '/flow/fiveothree/win/WinYesYnoN',
+      name: 'WinYesYnoN',
+      component: WinYesYnoN,
+    },
+    {
+      path: '/flow/fiveothree/win/WinYesN',
+      name: 'WinYesN',
+      component: WinYesN,
+    },
+    {
+      path: '/flow/fiveothree/linux/LinYes',
+      name: 'LinYes',
+      component: LinYes,
+    },
+    {
+      path: '/flow/fiveothree/linux/LinYesY',
+      name: 'LinYesY',
+      component: LinYesY,
+    },
+    {
+      path: '/flow/fiveothree/linux/LinYesYyes',
+      name: 'LinYesYyes',
+      component: LinYesYyes,
+    },
+    {
+      path: '/flow/fiveothree/linux/LinYesYno',
+      name: 'LinYesYno',
+      component: LinYesYno,
+    },
+    {
+      path: '/flow/fiveothree/linux/LinYesYnoYes',
+      name: 'LinYesYnoYes',
+      component: LinYesYnoYes,
+    },
+    {
+      path: '/flow/fiveothree/linux/LinYesYnoD',
+      name: 'LinYesYnoD',
+      component: LinYesYnoD,
+    },
+    {
+      path: '/flow/fiveothree/linux/LinYesN',
+      name: 'LinYesN',
+      component: LinYesN,
     },
     {
       path: '/flow/FormError',

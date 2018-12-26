@@ -12,38 +12,38 @@
     </nav>
     <!-- END - Application Primary nav section -->
     
-    <!-- BEGIN - 404 Website Error Text -->
+    <!-- BEGIN - 503 Server response Error Text -->
     <article id="wsod-message" class="message is-danger">
       <div class="notification is-danger">
-        <strong>404</strong> Website Error
+        <strong>503</strong> Server Response Error
       </div>
     </article>
-    <!-- END - 404 Website Error Text -->
+    <!-- END - 503 Server response Error Text -->
 
     
-    <!-- BEGIN 404 Error flow section -->
+    <!-- BEGIN 503 Error flow section -->
     <div class="content has-text-centered" id="flow">
       <div class="content is-medium">
-        <p>Is this a Wordpress website?</p>
+        <p>Stop and Start the <strong>IIS App Pool</strong>. is the site now able to load in browser?</p>
       </div>
       <p class="buttons">
-          <router-link to="/flow/fourofour/WpYes" class="button is-light">
+          <router-link to="/flow/fiveothree/win/WinYesYyes" class="button is-light">
             <span class="icon has-text-success">
               <i class="fas fa-check-circle"></i>
             </span>
-            <span><strong>Yes</strong>. This is a Wordpress Website</span>
+            <span><strong>Yes</strong>. The website now loads in browser</span>
           </router-link>  
-          <router-link to="/flow/fourofour/WpYesNo" class="button is-light">
+          <router-link to="/flow/fiveothree/win/WinYesYno" class="button is-light">
             <span class="icon has-text-danger">
               <i class="fas fa-exclamation-circle"></i>
             </span>
-            <span><strong>No</strong>. This not a Wordpress based Website.</span>
+            <span><strong>No</strong>. The website does not load in browser</span>
           </router-link>
         </p>
       
       <router-view/>
     </div>
-    <!-- END 404 Error flow section -->
+    <!-- END 503 Error flow section -->
 
   </div>
   <!-- END - Primary application deck -->

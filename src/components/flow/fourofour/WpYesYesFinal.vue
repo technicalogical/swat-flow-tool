@@ -1,7 +1,5 @@
 <template>
-  
-  <!-- BEGIN - Primary application deck -->
-  <div id="flow-deck">
+  <div id="flow-deck-two">
     <!-- BEGIN - Application Primary nav section -->
     <nav class="tabs is-small">
       <ul>
@@ -12,35 +10,26 @@
     </nav>
     <!-- END - Application Primary nav section -->
     
-    <!-- 404 Error / WSOD Text -->
+    <!-- BEGIN - 404 Website Error Text -->
     <article id="wsod-message" class="message is-danger">
       <div class="notification is-danger">
         <strong>404</strong> Website Error
       </div>
     </article>
-    <!-- END - 404 Error / WSOD Text -->
+    <!-- END - 404 Website Error Text -->
 
     
     <!-- BEGIN 404 Error flow section -->
-    <div class="content has-text-centered" id="flow">
-      <div class="content is-medium">
-        <p>Is there a valid .htaccess file present?</p>
+    <div class="content has-text-centered" id="flow">    
+      <div class="notification is-danger">
+        <strong>STOP HERE</strong>.
       </div>
-      <p class="buttons">
-          <router-link to="/flow/fourofour/WpYesFinalStop" class="button is-light">
-            <span class="icon has-text-success">
-              <i class="fas fa-check-circle"></i>
-            </span>
-            <span><strong>Yes</strong>. There is an .htaccess file.</span>
-          </router-link>  
-          <router-link to="/flow/fourofour/WpYesNo" class="button is-light">
-            <span class="icon has-text-danger">
-              <i class="fas fa-exclamation-circle"></i>
-            </span>
-            <span><strong>No</strong>. The .htaccess file is not present</span>
-          </router-link>
-        </p>
-      
+      <article class="message is-info">
+        <div class="message-body">
+          Advise the customer to Log into their Wordpress Dashboard and "refresh" the permalinks.
+        </div>
+      </article>
+      <router-link to="/SwatFlow" class="button is-dark is-fullwidth">Return to start</router-link>
       <router-view/>
     </div>
     <!-- END 404 Error flow section -->
@@ -52,7 +41,7 @@
 
 <script>
 export default {
-  
+
 }
 </script>
 
@@ -77,11 +66,12 @@ export default {
   position: relative;
   display: block;
   margin: 0px;
+  margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
   padding: 0px;
   border: 0px;
-  width: 90%;
+  width: 85%;
   height: 340px;
   top: 10px;
 }
