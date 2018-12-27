@@ -12,38 +12,44 @@
     </nav>
     <!-- END - Application Primary nav section -->
     
-    <!-- BEGIN - 503 Server response Error Text -->
+    <!-- BEGIN - Form mail Error Text -->
     <article id="wsod-message" class="message is-danger">
       <div class="notification is-danger">
-        <strong>503</strong> Server Response Error
+        <strong>Form Mail</strong> Error
       </div>
     </article>
-    <!-- END - 503 Server response Error Text -->
+    <!-- END - Form mail Error Text -->
 
     
-    <!-- BEGIN 503 Error flow section -->
+    <!-- BEGIN Form mail Error flow section -->
     <div class="content has-text-centered" id="flow">
       <div class="content is-medium">
-        <p>Do you see any strange or malicious files in the website file structure?</p>
+        <p>What did <strong>Splunk</strong> show as a result for this email?</p>
       </div>
       <p class="buttons">
-          <router-link to="/flow/fiveothree/linux/LinYesYyesY" class="button is-light">
-            <span class="icon has-text-success">
-              <i class="fas fa-check-circle"></i>
+          <router-link to="/flow/form/FormNaYa" class="button is-light">
+            <span class="icon has-text-warning">
+              <i class="fas fa-exclamation-triangle"></i>
             </span>
-            <span><strong>Yes</strong>. There are strange files present.</span>
+            <span>Email shows as <strong>CMAE-SPAM</strong></span>
           </router-link>  
-          <router-link to="/flow/fiveothree/linux/LinYesYyesN" class="button is-light">
-            <span class="icon has-text-danger">
-              <i class="fas fa-exclamation-circle"></i>
+          <router-link to="/flow/form/FormNaYb" class="button is-light">
+            <span class="icon has-text-warning">
+              <i class="fas fa-exclamation-triangle"></i>
             </span>
-            <span><strong>No</strong>. File structure looks normal.</span>
+            <span>Email shows as <strong>Accept/Delivered</strong></span>
+          </router-link>
+          <router-link to="/flow/form/FormNaYc" class="button is-light">
+            <span class="icon has-text-warning">
+              <i class="fas fa-exclamation-triangle"></i>
+            </span>
+            <span>Email shows <strong>Bad-Subject</strong></span>
           </router-link>
         </p>
       
       <router-view/>
     </div>
-    <!-- END 503 Error flow section -->
+    <!-- END Form mail Error flow section -->
 
   </div>
   <!-- END - Primary application deck -->

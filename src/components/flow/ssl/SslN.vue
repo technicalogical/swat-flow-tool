@@ -10,24 +10,34 @@
     </nav>
     <!-- END - Application Primary nav section -->
     
-    <!-- 500 Error / WSOD Text -->
+    <!-- SSL Website Errors Text -->
     <article id="wsod-message" class="message is-danger">
       <div class="notification is-danger">
-        <strong>500 Error / W.S.O.D. (White Screen of Death)</strong>
+        <strong>Form Mail Error</strong>
       </div>
     </article>
-    <!-- END - 500 Error / WSOD Text -->
+    <!-- END - SSL Website Errors Text -->
 
     
-    <!-- BEGIN 500 Error flow section -->
+    <!-- BEGIN SSL Website Errors section -->
     <div class="content has-text-centered" id="flow">    
       <div class="notification is-danger">
-        <strong>STOP HERE</strong> 
-      </div> 
+        <strong>STOP HERE</strong>.
+      </div>
+      <article class="message is-info">
+        <div class="message-body">
+          If the hosting is CPanel advise on generating a CSR from the hosting. There are Help documents available to the customer.
+        </div>
+      </article>
+      <article class="message is-small is-danger">
+        <div class="message-body">
+          Customer can not use third party SSL certificates on 4G hosting. There is no option to generate a CSR.
+        </div>
+      </article>
       <router-link to="/SwatFlow" class="button is-dark is-fullwidth">Return to start</router-link>
       <router-view/>
     </div>
-    <!-- END 500 Error flow section -->
+    <!-- END SSL Website Errors section -->
 
   </div>
   <!-- END - Primary application deck -->
@@ -36,7 +46,7 @@
 
 <script>
 export default {
-  name: 'FiveError'
+
 }
 </script>
 

@@ -9,6 +9,18 @@ import FourThree from '@/components/flow/FourThree'
 import FourFour from '@/components/flow/FourFour'
 import FiveThree from '@/components/flow/FiveThree'
 import FormError from '@/components/flow/FormError'
+import FormY from '@/components/flow/form/FormY'
+import FormYb from '@/components/flow/form/FormYb'
+import FormN from '@/components/flow/form/FormN'
+import FormNa from '@/components/flow/form/FormNa'
+import FormNaY from '@/components/flow/form/FormNaY'
+import FormNaYa from '@/components/flow/form/FormNaYa'
+import FormNaYb from '@/components/flow/form/FormNaYb'
+import FormNaYbY from '@/components/flow/form/FormNaYbY'
+import FormNaYbN from '@/components/flow/form/FormNaYbN'
+import FormNaYc from '@/components/flow/form/FormNaYc'
+import FormNaN from '@/components/flow/form/FormNaN'
+import SslError from '@/components/flow/SslError'
 import No from '@/components/flow/No'
 import Fos from '@/components/flow/fivehundrederror/Fos'
 import FosYes from '@/components/flow/fivehundrederror/FosYes'
@@ -53,10 +65,18 @@ import WinYesN from '@/components/flow/fiveothree/win/WinYesN'
 import LinYes from '@/components/flow/fiveothree/linux/LinYes'
 import LinYesY from '@/components/flow/fiveothree/linux/LinYesY'
 import LinYesYyes from '@/components/flow/fiveothree/linux/LinYesYyes'
+import LinYesYyesY from '@/components/flow/fiveothree/linux/LinYesYyesY'
+import LinYesYyesN from '@/components/flow/fiveothree/linux/LinYesYyesN'
+import LinYesYyesNy from '@/components/flow/fiveothree/linux/LinYesYyesNy'
+import LinYesYyesNn from '@/components/flow/fiveothree/linux/LinYesYyesNn'
 import LinYesYno from '@/components/flow/fiveothree/linux/LinYesYno'
 import LinYesYnoYes from '@/components/flow/fiveothree/linux/LinYesYnoYes'
 import LinYesYnoD from '@/components/flow/fiveothree/linux/LinYesYnoD'
 import LinYesN from '@/components/flow/fiveothree/linux/LinYesN'
+import SslY from '@/components/flow/ssl/SslY'
+import SslYa from '@/components/flow/ssl/SslYa'
+import SslYb from '@/components/flow/ssl/SslYb'
+import SslN from '@/components/flow/ssl/SslN'
 
 Vue.use(Router)
 
@@ -323,6 +343,26 @@ export default new Router({
       component: LinYesYyes,
     },
     {
+      path: '/flow/fiveothree/linux/LinYesYyesY',
+      name: 'LinYesYyesY',
+      component: LinYesYyesY,
+    },
+    {
+      path: '/flow/fiveothree/linux/LinYesYyesN',
+      name: 'LinYesYyesN',
+      component: LinYesYyesN,
+    },
+    {
+      path: '/flow/fiveothree/linux/LinYesYyesNy',
+      name: 'LinYesYyesNy',
+      component: LinYesYyesNy,
+    },
+    {
+      path: '/flow/fiveothree/linux/LinYesYyesNn',
+      name: 'LinYesYyesNn',
+      component: LinYesYyesNn,
+    },
+    {
       path: '/flow/fiveothree/linux/LinYesYno',
       name: 'LinYesYno',
       component: LinYesYno,
@@ -346,6 +386,86 @@ export default new Router({
       path: '/flow/FormError',
       name: 'FormError',
       component: FormError,
+    },
+    {
+      path: '/flow/form/FormY',
+      name: 'FormY',
+      component: FormY,
+    },
+    {
+      path: '/flow/form/FormYb',
+      name: 'FormYb',
+      component: FormYb,
+    },
+    {
+      path: '/flow/form/FormN',
+      name: 'FormN',
+      component: FormN,
+    },
+    {
+      path: '/flow/form/FormNa',
+      name: 'FormNa',
+      component: FormNa,
+    },
+    {
+      path: '/flow/form/FormNaY',
+      name: 'FormNaY',
+      component: FormNaY,
+    },
+    {
+      path: '/flow/form/FormNaYa',
+      name: 'FormNaYa',
+      component: FormNaYa,
+    },
+    {
+      path: '/flow/form/FormNaYb',
+      name: 'FormNaYb',
+      component: FormNaYb,
+    },
+    {
+      path: '/flow/form/FormNaYbY',
+      name: 'FormNaYbY',
+      component: FormNaYbY,
+    },
+    {
+      path: '/flow/form/FormNaYbN',
+      name: 'FormNaYbN',
+      component: FormNaYbN,
+    },
+    {
+      path: '/flow/form/FormNaYc',
+      name: 'FormNaYc',
+      component: FormNaYc,
+    },
+    {
+      path: '/flow/form/FormNaN',
+      name: 'FormNaN',
+      component: FormNaN,
+    },
+    {
+      path: '/flow/SslError',
+      name: 'SslError',
+      component: SslError,
+    },
+    {
+      path: '/flow/ssl/SslY',
+      name: 'SslY',
+      component: SslY,
+    },
+    {
+      path: '/flow/ssl/SslYa',
+      name: 'SslYa',
+      component: SslYa,
+    },
+    {
+      path: '/flow/ssl/SslYb',
+      name: 'SslYb',
+      component: SslYb,
+    },
+    {
+      path: '/flow/ssl/SslN',
+      name: 'SslN',
+      component: SslN,
     },
   ]
 })

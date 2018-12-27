@@ -24,20 +24,20 @@
     <!-- BEGIN 503 Error flow section -->
     <div class="content has-text-centered" id="flow">
       <div class="content is-medium">
-        <p>Do you see any strange or malicious files in the website file structure?</p>
+        <p>Kill PHP processes and toggle PHP version. Are the resources still spiking?</p>
       </div>
       <p class="buttons">
-          <router-link to="/flow/fiveothree/linux/LinYesYyesY" class="button is-light">
+          <router-link to="/flow/fiveothree/linux/LinYesYyesNy" class="button is-light">
             <span class="icon has-text-success">
               <i class="fas fa-check-circle"></i>
             </span>
-            <span><strong>Yes</strong>. There are strange files present.</span>
+            <span><strong>Yes</strong>. The resources are still spiking.</span>
           </router-link>  
-          <router-link to="/flow/fiveothree/linux/LinYesYyesN" class="button is-light">
+          <router-link to="/flow/fiveothree/linux/LinYesYyesNn" class="button is-light">
             <span class="icon has-text-danger">
               <i class="fas fa-exclamation-circle"></i>
             </span>
-            <span><strong>No</strong>. File structure looks normal.</span>
+            <span><strong>No</strong>. The resources are no longer spiking</span>
           </router-link>
         </p>
       

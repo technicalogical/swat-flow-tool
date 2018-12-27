@@ -10,24 +10,29 @@
     </nav>
     <!-- END - Application Primary nav section -->
     
-    <!-- 500 Error / WSOD Text -->
+    <!-- Form mail Error Text -->
     <article id="wsod-message" class="message is-danger">
       <div class="notification is-danger">
-        <strong>500 Error / W.S.O.D. (White Screen of Death)</strong>
+        <strong>Form Mail Error</strong>
       </div>
     </article>
-    <!-- END - 500 Error / WSOD Text -->
+    <!-- END - Form mail Error Text -->
 
     
-    <!-- BEGIN 500 Error flow section -->
+    <!-- BEGIN Form mail Error section -->
     <div class="content has-text-centered" id="flow">    
       <div class="notification is-danger">
-        <strong>STOP HERE</strong> 
-      </div> 
+        <strong>STOP HERE</strong>.
+      </div>
+      <article class="message is-info">
+        <div class="message-body">
+          Transfer the customer to a Tier 2 agent for further troubleshooting.
+        </div>
+      </article>
       <router-link to="/SwatFlow" class="button is-dark is-fullwidth">Return to start</router-link>
       <router-view/>
     </div>
-    <!-- END 500 Error flow section -->
+    <!-- END Form mail Error section -->
 
   </div>
   <!-- END - Primary application deck -->
@@ -36,7 +41,7 @@
 
 <script>
 export default {
-  name: 'FiveError'
+
 }
 </script>
 

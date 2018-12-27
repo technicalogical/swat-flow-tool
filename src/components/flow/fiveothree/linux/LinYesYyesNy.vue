@@ -10,24 +10,29 @@
     </nav>
     <!-- END - Application Primary nav section -->
     
-    <!-- 500 Error / WSOD Text -->
+    <!-- BEGIN - 503 Server response Error Text -->
     <article id="wsod-message" class="message is-danger">
       <div class="notification is-danger">
-        <strong>500 Error / W.S.O.D. (White Screen of Death)</strong>
+        <strong>503</strong> Server Response Error
       </div>
     </article>
-    <!-- END - 500 Error / WSOD Text -->
+    <!-- END - 503 Server response Error Text -->
 
     
-    <!-- BEGIN 500 Error flow section -->
+    <!-- BEGIN 503 Error flow section -->
     <div class="content has-text-centered" id="flow">    
       <div class="notification is-danger">
-        <strong>STOP HERE</strong> 
-      </div> 
+        <strong>STOP HERE</strong>.
+      </div>
+      <article class="message is-info">
+        <div class="message-body">
+          Transfer the customer to a Tier 2 agent for further troubleshooting.
+        </div>
+      </article>
       <router-link to="/SwatFlow" class="button is-dark is-fullwidth">Return to start</router-link>
       <router-view/>
     </div>
-    <!-- END 500 Error flow section -->
+    <!-- END 503 Error flow section -->
 
   </div>
   <!-- END - Primary application deck -->
@@ -36,7 +41,7 @@
 
 <script>
 export default {
-  name: 'FiveError'
+
 }
 </script>
 

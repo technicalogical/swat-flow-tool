@@ -2,27 +2,48 @@
   
   <!-- BEGIN - Primary application deck -->
   <div id="flow-deck">
-
-    <!-- 500 Error / WSOD Text -->
+    <!-- BEGIN - Application Primary nav section -->
+    <nav class="tabs is-small">
+      <ul>
+        <li><router-link to="/">Home</router-link></li>
+        <li class="is-active"><router-link to="/SwatFlow">Swat Flow</router-link></li>
+        <li><router-link to="/SwatNote">Swat Note</router-link></li>
+      </ul>  
+    </nav>
+    <!-- END - Application Primary nav section -->
+    
+    <!-- BEGIN - Form mail Error Text -->
     <article id="wsod-message" class="message is-danger">
-      <div class="message-header">
-        <p>500 Error / WSOD (White Screen of Death)</p>
-      </div>
-      <div class="message-body">
-        Where is error happening?
+      <div class="notification is-danger">
+        <strong>Form Mail</strong> Error
       </div>
     </article>
+    <!-- END - Form mail Error Text -->
+
     
-    <!-- END - 500 Error / WSOD Text -->
-    <div id="switch-set" class="buttons are-medium">
-      <a class="button">Front of customer website</a>
-      <a class="button">On wp-admin page</a>
-    </div>
-    <!-- BEGIN 500 Error flow section -->
-    <div id="flow">
+    <!-- BEGIN Form mail Error flow section -->
+    <div class="content has-text-centered" id="flow">
+      <div class="content is-medium">
+        <p>Upload <strong>geoff.php</strong> to the file structure and send yourself an email. Check <strong>Splunk</strong> to see if the email sent.</p>
+      </div>
+      <p class="buttons">
+          <router-link to="/flow/form/FormY" class="button is-light">
+            <span class="icon has-text-success">
+              <i class="fas fa-check-circle"></i>
+            </span>
+            <span><strong>Yes</strong>. The email does show in Splunk</span>
+          </router-link>  
+          <router-link to="/flow/form/FormN" class="button is-light">
+            <span class="icon has-text-danger">
+              <i class="fas fa-exclamation-circle"></i>
+            </span>
+            <span><strong>No</strong>. The email doesn't show in Splunk</span>
+          </router-link>
+        </p>
       
+      <router-view/>
     </div>
-    <!-- END 500 Error flow section -->
+    <!-- END Form mail Error flow section -->
 
   </div>
   <!-- END - Primary application deck -->
@@ -31,7 +52,7 @@
 
 <script>
 export default {
-  name: 'FiveError'
+  
 }
 </script>
 
@@ -59,20 +80,9 @@ export default {
   margin-left: auto;
   margin-right: auto;
   padding: 0px;
-  border: 1px solid black;
+  border: 0px;
   width: 90%;
   height: 340px;
   top: 10px;
-}
-
-#switch-set {
-  position: relative;
-  text-align: center;
-  display: block;
-  margin: 0px;
-  margin-top: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0px;
 }
 </style>

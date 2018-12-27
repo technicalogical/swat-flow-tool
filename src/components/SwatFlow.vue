@@ -58,6 +58,12 @@
             </span>
             <span><strong>Form Mail</strong> Issues</span>
           </router-link>
+          <router-link to="/flow/SslError" class="button is-light">
+            <span class="icon has-text-success">
+              <i class="fas fa-play-circle"></i>
+            </span>
+            <span><strong>SSL</strong> Errors</span>
+          </router-link>
         </p>
       </div> 
     </div>

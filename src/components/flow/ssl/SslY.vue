@@ -12,38 +12,38 @@
     </nav>
     <!-- END - Application Primary nav section -->
     
-    <!-- BEGIN - 503 Server response Error Text -->
+    <!-- BEGIN - SSL Website Errors Text -->
     <article id="wsod-message" class="message is-danger">
       <div class="notification is-danger">
-        <strong>503</strong> Server Response Error
+        <strong>SSL</strong> Website Error
       </div>
     </article>
-    <!-- END - 503 Server response Error Text -->
+    <!-- END - SSL Website Errors Text -->
 
     
-    <!-- BEGIN 503 Error flow section -->
+    <!-- BEGIN SSL Error flow section -->
     <div class="content has-text-centered" id="flow">
       <div class="content is-medium">
-        <p>Do you see any strange or malicious files in the website file structure?</p>
+        <p>Is the <strong>SSL</strong> meant for an addon domain or the primary domain?</p>
       </div>
       <p class="buttons">
-          <router-link to="/flow/fiveothree/linux/LinYesYyesY" class="button is-light">
+          <router-link to="/flow/ssl/SslYa" class="button is-light">
             <span class="icon has-text-success">
               <i class="fas fa-check-circle"></i>
             </span>
-            <span><strong>Yes</strong>. There are strange files present.</span>
+            <span><strong>Yes</strong>. The SSL is for an addon domain</span>
           </router-link>  
-          <router-link to="/flow/fiveothree/linux/LinYesYyesN" class="button is-light">
+          <router-link to="/flow/ssl/SslYb" class="button is-light">
             <span class="icon has-text-danger">
               <i class="fas fa-exclamation-circle"></i>
             </span>
-            <span><strong>No</strong>. File structure looks normal.</span>
+            <span><strong>No</strong>. The SSL is for the primary domain</span>
           </router-link>
         </p>
       
       <router-view/>
     </div>
-    <!-- END 503 Error flow section -->
+    <!-- END SSL Error flow section -->
 
   </div>
   <!-- END - Primary application deck -->

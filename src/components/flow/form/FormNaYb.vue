@@ -12,38 +12,38 @@
     </nav>
     <!-- END - Application Primary nav section -->
     
-    <!-- BEGIN - 503 Server response Error Text -->
+    <!-- BEGIN - Form mail Error Text -->
     <article id="wsod-message" class="message is-danger">
       <div class="notification is-danger">
-        <strong>503</strong> Server Response Error
+        <strong>Form Mail</strong> Error
       </div>
     </article>
-    <!-- END - 503 Server response Error Text -->
+    <!-- END - Form mail Error Text -->
 
     
-    <!-- BEGIN 503 Error flow section -->
+    <!-- BEGIN Form mail Error flow section -->
     <div class="content has-text-centered" id="flow">
       <div class="content is-medium">
-        <p>Do you see any strange or malicious files in the website file structure?</p>
+        <p>Is it going to the email the customer intended for it to go to?</p>
       </div>
       <p class="buttons">
-          <router-link to="/flow/fiveothree/linux/LinYesYyesY" class="button is-light">
+          <router-link to="/flow/form/FormNaYbY" class="button is-light">
             <span class="icon has-text-success">
               <i class="fas fa-check-circle"></i>
             </span>
-            <span><strong>Yes</strong>. There are strange files present.</span>
+            <span><strong>Yes</strong>. The email address is correct</span>
           </router-link>  
-          <router-link to="/flow/fiveothree/linux/LinYesYyesN" class="button is-light">
+          <router-link to="/flow/form/FormNaYbN" class="button is-light">
             <span class="icon has-text-danger">
               <i class="fas fa-exclamation-circle"></i>
             </span>
-            <span><strong>No</strong>. File structure looks normal.</span>
+            <span><strong>No</strong>. The email address is wrong</span>
           </router-link>
         </p>
       
       <router-view/>
     </div>
-    <!-- END 503 Error flow section -->
+    <!-- END Form mail Error flow section -->
 
   </div>
   <!-- END - Primary application deck -->
