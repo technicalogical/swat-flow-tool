@@ -224,6 +224,15 @@ footer img {
 /* END | Swat Flow Vue CSS */
 
 /* BEGIN | Swat Note Vue CSS */
+#note-deck {
+  position: relative;
+  top: 0px;
+  margin: 0px;
+  padding: 0px;
+  border: 1px solid pink;
+  height: 600px;
+}
+
 #swat-note-input {
   position: relative;
   margin: 0px;
@@ -235,7 +244,7 @@ footer img {
 }
 
 #sitch-text {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 #call-notes {
@@ -243,25 +252,27 @@ footer img {
   margin: 0px;
   margin-left: 20px;
   padding: 0px;
-  border: 0px;
+  border: 1px solid black;
   width: 90%;
-  height: 160px;
+  height: 130px;
+  overflow: hidden;
 }
 
 #call-notes p {
-  margin: 10px;
-  font-size: 14px;
+  margin: 5px;
+  font-size: 12px;
 }
 
 #note-buttons {
-  position: relative;
+  position: absolute;
+  bottom: 0px;
   margin: 0px;
-  margin-left: 30px;
+  margin-left: 20px;
   margin-right: 20px;
   padding: 0px;
-  border: 0px;
+  border: 1px solid green;
   width: 90%;
-  height: 60px;
+  height: 35px;
 }
 
 #closed {
