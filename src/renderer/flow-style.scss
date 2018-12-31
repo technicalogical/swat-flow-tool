@@ -1,0 +1,325 @@
+/* Full Application CSS for swat-flow-tool */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* BEGIN | General Application CSS section */
+body {
+  -ms-overflow-style: scrollbar;
+  -webkit-app-region:drag;
+  margin: 0px;
+  padding: 0px;
+  width: 450px;
+  font-family: 'Open Sans', sans-serif;
+  border: 1px solid hsl(204, 86%, 53%);
+}
+
+html{
+  font-family: 'Open Sans', sans-serif;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input[type="text"],
+input[type="tel"],
+button,
+a,
+li,
+textarea {
+	-webkit-app-region: no-drag;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  outline: none;
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+  }
+/* END | General Application CSS section */
+
+/* BEGIN | Primary Vue Application Vue CSS */
+#app {
+  position: relative;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  width: 450px;
+  height: 698px;
+  top: 0px;
+}
+
+#app input[type="submit"],
+#app input[type="reset"],
+#app input[type="button"],
+#app input[type="text"],
+#app input[type="tel"],
+#app button,
+#app a,
+#app li,
+#app textarea {
+	-webkit-app-region: no-drag;
+}
+/* END | Primary Vue Application Vue CSS */
+
+/* BEGIN | Application top icon links CSS */
+#app-top-links {
+  position: relative;
+  margin: 0px;
+  right: 2px;
+  padding: 0px;
+  height: 30px;
+  width: 100%;
+  border: 0px;
+}
+/* END | Application top icon links CSS */
+
+/* BEGIN | Primary App Deck CSS */
+#prime-app-deck {
+  position: relative;
+  display: block;
+  margin: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  border: 0px;
+  height: 600px;
+  width: 450px;
+}
+/* END | Primary App Deck CSS */
+
+/* BEGIN | App top nav CSS */
+nav {
+  position: relative;
+  margin: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 98%;
+  padding: 0px;
+  border: 0px;
+}
+/* END | App top nav CSS */
+
+/* BEGIN | App footer CSS */
+footer {
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  border-top: 1px solid hsl(0, 0%, 71%);
+  bottom: 0px;
+  height: 70px;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+}
+
+footer img {
+  position: relative;
+  top: 10px;
+}
+
+#app-vers {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  top: 8px;
+  font-size: 10px;
+}
+/* END | App footer CSS */
+
+/* BEGIN | App home page CSS */
+#home-links {
+  position: relative;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 250px;
+}
+/* BEGIN | App home page CSS */
+
+/* BEGIN | Swat Flow Vue CSS */
+#swat-deck {
+  position: relative;
+  top: 0px;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  height: 545px;
+}
+
+#flow {
+  position: relative;
+  display: block;
+  margin: 0px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  border: 0px;
+  width: 85%;
+  height: 340px;
+  top: 10px;
+}
+
+#flow-start-message {
+  position: relative;
+  margin: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#logo-main {
+  position: relative;
+  text-align: center;
+  top: 70px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0px;
+}
+
+#get-start {
+  position: relative;
+  width: 50%;
+  text-align: center;
+  top: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0px;
+}
+
+#swat-motto {
+  position: relative;
+  width: 70%;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  color: black;
+  top: 170px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0px;
+}
+/* END | Swat Flow Vue CSS */
+
+/* BEGIN | Swat Note Vue CSS */
+#swat-note-input {
+  position: relative;
+  margin: 0px;
+  margin-left: 20px;
+  padding: 0px;
+  border: 0px;
+  width: 70%;
+  height: 300px;
+}
+
+#sitch-text {
+  margin-bottom: 30px;
+}
+
+#call-notes {
+  position: relative;
+  margin: 0px;
+  margin-left: 20px;
+  padding: 0px;
+  border: 0px;
+  width: 90%;
+  height: 160px;
+}
+
+#call-notes p {
+  margin: 10px;
+  font-size: 14px;
+}
+
+#note-buttons {
+  position: relative;
+  margin: 0px;
+  margin-left: 30px;
+  margin-right: 20px;
+  padding: 0px;
+  border: 0px;
+  width: 90%;
+  height: 60px;
+}
+
+#closed {
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  top: -20px;
+  left: 100px;
+}
+/* END | Swat Note Vue CSS */
+
+/* START | Swat Tool Vue CSS */
+#tool-page {
+  position: relative;
+  width: 90%;
+  height: 490px;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0px;
+}
+
+#tool-tabs {
+  position: absolute;
+  display: block;
+  margin: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  padding:0px;
+  bottom: -55px;
+  border: 0px;
+  width: 100%;
+  height: 35px;
+}
+
+#tool-tab-left {
+  position: relative;
+  float: left;
+  margin: 0px;
+  margin-left: 2px;
+  padding: 0px;
+  width: 150px;
+  height: 35px;
+  border: 0px;
+}
+
+#tool-tab-right {
+  position: relative;
+  float: right;
+  margin: 0px;
+  margin-right: 2px;
+  padding: 0px;
+  width: 150px;
+  height: 35px;
+  border: 0px;
+}
+
+#tool-tab-right a {
+  float: right;
+}
+/* END | Swat Tool Vue CSS */

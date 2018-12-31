@@ -1,0 +1,93 @@
+<template>
+  
+  <!-- BEGIN - Primary application deck -->
+  <div id="swat-deck">
+
+    <!-- BEGIN - Application Primary nav section -->
+    <nav class="tabs is-small">
+      <ul>
+        <li><router-link to="/">Home</router-link></li>
+        <li><router-link to="/SwatFlow">Swat Flow</router-link></li>
+        <li class="is-active"><router-link to="/SwatNote">Swat Note</router-link></li>
+        <li><router-link to="/SwatTools">Swat Tools</router-link></li>
+      </ul>  
+    </nav>
+    <!-- END - Application Primary nav section -->
+
+    <!-- BEGIN Swat Note input section -->
+    <form id="swat-note-input">
+      <p class="help is-danger">THIS PAGE DOES NOT STORE CUSTOMER DATA</p>
+      <div class="field">
+        <div class="control has-icons-left has-icons-right">
+          <input id="filled1" v-model="name" class="input is-small is-hovered" type="text" placeholder="Customer Name" />
+          <span class="icon is-small is-left has-text-info">
+            <i class="fas fa-user"></i>
+          </span>
+        </div>
+      </div>
+      <div id="sitch-text" class="control">
+        <textarea id="filled2" v-model="sitch" class="textarea is-small is-hovered has-fixed-size" placeholder="Customer's situation"></textarea>
+      </div>
+      <div class="field">
+        <div class="control has-icons-left has-icons-right">
+          <input id="filled3" v-model="domain" class="input is-small is-hovered" type="text" placeholder="Domain(s)" />
+          <span class="icon is-small is-left has-text-info">
+            <i class="fas fa-globe"></i>
+          </span>
+        </div>
+        <p class="help is-info">Seperate multiple domains with commas.</p>
+      </div>   
+    </form>
+    <!-- END Swat Note input section -->
+    <p id="closed" class="is-danger"><strong>THIS PAGE IS NOT ACTIVE.</strong></p>
+    <!-- BEGIN Copy paste notes section -->
+    <div id="call-notes">
+      <p>#SWAT</p>
+      <p>Customer name: {{ name }} </p>
+      <p>Situation: {{ sitch }} </p>
+      <p>Domain(s): {{ domain }} </p>
+    </div>
+    <!-- END Copy paste notes section -->
+
+    <!-- BEGIN Note buttons section -->
+    <p id="note-buttons" class="buttons">
+      <button class="button is-small is-dark" value="">
+        <span class="icon has-text-success">
+          <i class="fas fa-clipboard"></i>
+        </span>
+        <span>Copy to Clipboard</span>
+      </button>
+      <button type="button" value="" class="button is-small is-danger" onclick="document.getElementById('filled1').value = ''">
+        <span class="icon">
+          <i class="fas fa-times-circle"></i>
+        </span>
+        <span>Clear fields</span>
+      </button> 
+    </p>
+    <!-- END Note buttons section -->
+
+  </div>
+  <!-- END - Primary application deck -->
+    
+</template>
+
+<script>
+export default({
+  el: '#swat-note-input',
+ data: function() {
+    return {
+      name: "",
+      sitch: "",
+      domain: ""
+    }
+  }
+});
+
+function ClearFields() {
+  document.getElementById('filled1').value = '';
+  document.getElementById('filled2').value = '';
+  document.getElementById('filled').value = ''
+}
+</script>
+
+<style src="../flow-style.scss" ></style>

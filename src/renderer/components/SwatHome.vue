@@ -1,0 +1,54 @@
+<template>
+
+  <!-- BEGIN - Primary application deck -->
+  <div id="swat-deck" class="hello">
+    <!-- BEGIN - Application Primary nav section -->
+    <nav class="tabs is-small">
+      <ul>
+        <li class="is-active"><router-link to="/">Home</router-link></li>
+        <li><router-link to="/SwatFlow">Swat Flow</router-link></li>
+        <li><router-link to="/SwatNote">Swat Note</router-link></li>
+        <li><router-link to="/SwatTools">Swat Tools</router-link></li>
+      </ul>  
+    </nav>
+    <!-- END - Application Primary nav section -->
+    
+    <!-- START - Message of Swat FLow Chart -->
+    <div class="content " id="flow-start-message">
+
+      <!-- BEGIN Home page logo section -->
+      <div id="logo-main" class="content">
+        <img src="../assets/images/swatflowtool-full.png" width="180">
+      </div>
+      <!-- END Home page logo section -->
+    </div>
+    <!-- BEGIN Start button -->
+    <div id="get-start" class="field is-grouped">
+      <p class="control">
+        <router-link to="/SwatMenu" class="button is-small is-fullwidth is-success">
+          <strong>GET STARTED</strong>
+        </router-link>
+      </p>
+    </div>
+    <!-- END Start button -->
+
+    <!-- BEGIN swat motto statement -->
+    <div id="swat-motto">
+      <p><strong>"Solve, Wow, Advocate, Transfer".</strong></p>
+    </div>
+    <!-- END swat motto statement -->
+
+    <!-- END - Message of Swat FLow Chart -->
+    <router-view/>
+  </div>
+  <!-- END - Primary application deck -->
+  
+</template>
+
+<script>
+export default {
+  
+}
+</script>
+
+<style src="../flow-style.scss" ></style>
