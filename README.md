@@ -14,6 +14,7 @@ yarn run dev - This will allow for hot reload upon saving changes.
 # run app from local 
 There is no longer a need to run second console. through vue CLI 3 the hot reload happens within first window. 
 
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
 swat-flow-tool
 
