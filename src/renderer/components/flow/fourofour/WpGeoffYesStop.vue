@@ -52,34 +52,4 @@ export default {
 }
 </script>
 
-<style scoped>
-#flow-deck {
-  position: relative;
-  top: 0px;
-  margin: 0px;
-  padding: 0px;
-  border: 0px;
-  height: 545px;
-}
-
-#wsod-message {
-  position: relative;
-  margin: 0px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-#flow {
-  position: relative;
-  display: block;
-  margin: 0px;
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0px;
-  border: 0px;
-  width: 85%;
-  height: 340px;
-  top: 10px;
-}
-</style>
+<style src="../../../flow-style.scss"></style>

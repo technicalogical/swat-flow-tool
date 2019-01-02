@@ -22,11 +22,9 @@
         Here you will find strategically organized groupings of the most useful links tactically aquired from <strong>GoDaddy</strong> tribal knowledge. It is a primary recommendation that you bookmark your favorites in browser to be better prepared for future troubleshooting.
       </div>
 
-
+      <!--Start S.W.A.T Tools -->
       <p class="buttons">
-         <!--Start S.W.A.T Tools -->
-        <p>
-        <h5 style="margin: 1px">S.W.A.T Tools</h5>
+         
         <!-- SWAT confluence home page -->
         <a href="https://confluence.godaddy.com/pages/viewpage.action?spaceKey=HSWAT&title=SWAT+Team+Home" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
@@ -66,11 +64,7 @@
           </span>
           <span><strong>S.W.A.T. Team Contacts</strong></span>
         </a>
-        
-        <!--Start S.W.A.T Tools -->
-        <p>
-        <h5 style="margin: 1px">Refund Tools</h5>
-        
+           
         <!-- GoDaddy refund policy -->
         <a href="https://www.godaddy.com/agreements/showdoc?pageid=19963&prog_id=GoDaddy" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
@@ -78,7 +72,6 @@
           </span>
           <span><strong>GoDaddy Refund Policy</strong></span>
         </a>
-
 
         <!-- Out of policy refunds -->
         <a href="https://godaddy.jiveon.com/community/c3/c3-forms-policies-procedures/refund-toolkit" target="_blank" class="button is-small is-dark">
@@ -118,16 +111,9 @@
 </template>
 
 <script>
-export default({
-  el: '#swat-note-input',
- data: function() {
-    return {
-      name: "",
-      sitch: "",
-      domain: ""
-    }
-  }
-})
+export default {
+
+}
 </script>
 
 <style src="../flow-style.scss"></style>

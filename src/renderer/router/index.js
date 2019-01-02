@@ -4,7 +4,6 @@ import '../../../node_modules/bulma/css/bulma.css';
 
 // BEGIN Primary imported routes
 import SwatHome from '@/components/SwatHome'
-import SwatMenu from '@/components/SwatMenu'
 import SwatFlow from '@/components/SwatFlow'
 import SwatNote from '@/components/SwatNote'
 import SwatTools from '@/components/SwatTools'
@@ -122,11 +121,6 @@ export default new Router({
       path: '/',
       name: 'SwatHome',
       component: SwatHome
-    },
-    {
-      path: '/SwatMenu',
-      name: 'SwatMenu',
-      component: SwatMenu
     },
     {
       path: '/SwatFlow',

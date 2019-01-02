@@ -19,6 +19,7 @@ body {
   width: 450px;
   font-family: 'Open Sans', sans-serif;
   border: 1px solid hsl(204, 86%, 53%);
+  background-color: #fff
 }
 
 html{
@@ -89,6 +90,15 @@ a:active {
   width: 100%;
   border: 0px;
 }
+
+#helper-one {
+  position: absolute;
+  top: 0px;
+  left: 2px;
+  margin: 3px;
+  padding: 0px;
+
+}
 /* END | Application top icon links CSS */
 
 /* BEGIN | Primary App Deck CSS */
@@ -143,6 +153,7 @@ footer img {
   margin-right: auto;
   top: 8px;
   font-size: 10px;
+  letter-spacing: .1em
 }
 /* END | App footer CSS */
 
@@ -153,6 +164,41 @@ footer img {
   margin-left: auto;
   margin-right: auto;
   height: 250px;
+}
+
+#logo-main {
+  position: relative;
+  text-align: center;
+  top: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0px;
+}
+
+#get-start {
+  position: relative;
+  width: 50%;
+  text-align: center;
+  top: 70px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0px solid;
+}
+
+#swat-motto {
+  position: relative;
+  width: 70%;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  color: black;
+  top: 170px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0px;
 }
 /* BEGIN | App home page CSS */
 
@@ -180,46 +226,29 @@ footer img {
   top: 10px;
 }
 
-#flow-start-message {
+#wsod-message {
   position: relative;
   margin: 0px;
   margin-left: 20px;
   margin-right: 20px;
 }
 
-#logo-main {
+#switch-set {
   position: relative;
   text-align: center;
-  top: 70px;
   display: block;
+  margin: 0px;
+  margin-top: 15px;
   margin-left: auto;
   margin-right: auto;
-  border: 0px;
+  padding: 0px;
 }
 
-#get-start {
+#flow-start-message {
   position: relative;
-  width: 50%;
-  text-align: center;
-  top: 100px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border: 0px;
-}
-
-#swat-motto {
-  position: relative;
-  width: 70%;
-  text-align: center;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-style: italic;
-  color: black;
-  top: 170px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border: 0px;
+  margin: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 /* END | Swat Flow Vue CSS */
 
@@ -229,7 +258,7 @@ footer img {
   top: 0px;
   margin: 0px;
   padding: 0px;
-  border: 1px solid pink;
+  border: 0px;
   height: 600px;
 }
 
@@ -244,7 +273,7 @@ footer img {
 }
 
 #sitch-text {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 #call-notes {
@@ -252,13 +281,13 @@ footer img {
   margin: 0px;
   margin-left: 20px;
   padding: 0px;
-  border: 1px solid black;
+  border: 0px;
   width: 90%;
   height: 130px;
   overflow: hidden;
 }
 
-#call-notes p {
+#call-notes p { 
   margin: 5px;
   font-size: 12px;
 }
@@ -270,7 +299,7 @@ footer img {
   margin-left: 20px;
   margin-right: 20px;
   padding: 0px;
-  border: 1px solid green;
+  border: 0px;
   width: 90%;
   height: 35px;
 }
@@ -334,8 +363,13 @@ footer img {
   float: right;
 }
 
+/* END | Swat Tool Vue CSS */
+
+
+
 h5 { 
   margin: 1px;
+  padding: 0px;
 }
 
 a {
@@ -343,3 +377,4 @@ a {
 }
 
 /* END | Swat Tool Vue CSS */
+

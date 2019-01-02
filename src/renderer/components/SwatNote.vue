@@ -40,18 +40,20 @@
       <div class="field">
         <div class="control">
           <div class="select is-small">
-            <select>
-              <option>Select dropdown</option>
-              <option>With options</option>
+            <select id="methods" v-model="selected">
+              <option disabled value="testing">Please select one</option>
+              <option>A</option>
+              <option>B</option>
+              <option>C</option>
             </select>
           </div>
         </div>
       </div>
     </form>
 
-    <!-- END Swat Note input section 
+    <!-- END Swat Note input section -->
     <p id="closed" class="is-danger"><strong>THIS PAGE IS NOT ACTIVE.</strong></p>
-     BEGIN Copy paste notes section -->
+    <!--  BEGIN Copy paste notes section -->
 
     <div id="call-notes">
       
@@ -60,7 +62,7 @@
       <p>Situation: {{ sitch }} </p>
       <p>Domain(s): {{ domain }} </p>
       <p>Methods: {{ method }} </p>
-      
+
     </div>
     <!-- END Copy paste notes section -->
 

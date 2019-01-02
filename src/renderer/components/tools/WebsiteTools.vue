@@ -23,8 +23,7 @@
       </div>
 
       <p class="buttons">
-        <!--Start Speed Test Tools -->
-        <h5>Speed Tests</h5>
+
         <!-- GTmetrix -->
         <a href="https://gtmetrix.com/" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
@@ -40,10 +39,7 @@
           </span>
           <span><strong>Pingdom</strong></span>
         </a>
-        
-        <!--Start DNS Tools -->
-        <p>
-        <h5>DNS Tools</h5>
+      
         <!-- Whatsmydns -->
         <a href="https://www.whatsmydns.net/" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
@@ -76,17 +72,6 @@
           <span><strong>DNS Trails</strong></span>
         </a>
 
-        <!-- Country Flags & IP Whois -->
-        <!-- <a href="https://addons.mozilla.org/en-US/firefox/addon/country-flags-ip-whois/" target="_blank" class="button is-small is-dark">
-          <span class="icon has-text-success">
-            <i class="fas fa-globe"></i>
-          </span>
-          <span><strong>DNS Browser Plugin</strong></span>
-        </a> -->
-
-        <!--Start SSL Tools -->
-        <p>
-        <h5>SSL Tools</h5>
         <!-- SSL Shopper -->
         <a href="https://www.sslshopper.com/ssl-checker.html" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
@@ -111,9 +96,6 @@
           <span><strong>SSL Checker</strong></span>
         </a>
 
-        <!--Start Hosting Tools -->
-        <p>
-        <h5>Hosting Tools</h5>
         <!-- Host tracker -->
         <a href="https://www.host-tracker.com/" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
@@ -137,11 +119,7 @@
           </span>
           <span><strong>ShotSherpa</strong></span>
         </a>
-
-        
-        <!--Start Email Tools -->
-        <p>
-        <h5>Email Tools</h5>
+               
         <!-- Spam Haus Look-up -->
         <a href="https://www.spamhaus.org/lookup/" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
@@ -157,7 +135,7 @@
           </span>
           <span><strong>Domain black-list check</strong></span>
         </a>
-      
+      </p>
     </div>
     <!-- END Swat Tools section -->
 
@@ -186,69 +164,4 @@
 
 </script>
 
-<style scoped>
-#swat-deck {
-  position: relative;
-  top: 0px;
-  margin: 0px;
-  padding: 0px;
-  border: 0px;
-  height: 545px;
-}
-
-#tool-page {
-  position: relative;
-  width: 90%;
-  height: 490px;
-  display:block;
-  margin-left: auto;
-  margin-right: auto;
-  border: 0px;
-}
-
-#tool-tabs {
-  position: absolute;
-  display: block;
-  margin: 0px;
-  margin-left: auto;
-  margin-right: auto;
-  padding:0px;
-  bottom: -55px;
-  border: 0px;
-  width: 100%;
-  height: 35px;
-}
-
-#tool-tab-left {
-  position: relative;
-  float: left;
-  margin: 0px;
-  margin-left: 2px;
-  padding: 0px;
-  width: 150px;
-  height: 35px;
-  border: 0px;
-}
-
-#tool-tab-right {
-  position: relative;
-  float: right;
-  margin: 0px;
-  margin-right: 2px;
-  padding: 0px;
-  width: 150px;
-  height: 35px;
-  border: 0px;
-}
-
-#tool-tab-right a {
-  float: right;
-}
-h5 { 
-  margin: 1px;
-}
-
-a {
-  margin: 1px 0px 1px 0px;
-}
-</style>
+<style src="../../flow-style.scss"></style>
