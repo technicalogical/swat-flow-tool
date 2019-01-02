@@ -23,7 +23,9 @@
       </div>
 
       <p class="buttons">
-
+      <!--Start Restore and Migration Tools -->
+        <p>
+        <h5>Restore and Migration Tools</h5>
         <!-- Restore U -->
         <a href="https://hs.int.godaddy.com/restore-u/#/index" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
@@ -39,13 +41,15 @@
           </span>
           <span><strong>Migrate U</strong></span>
         </a>
-
+        <!--Start Knowledgebase Tools -->
+        <p>
+        <h5>Knowledge Base Tools</h5>
         <!-- Hosting Kb -->
         <a href="https://confluence.godaddy.com/display/C3PHS/Hosting+Support+Knowledge+Base+-+Hitchhikers+Guide+to+Hosting" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
             <i class="fas fa-book"></i>
           </span>
-          <span><strong>General Hosting knowledge base</strong></span>
+          <span><strong>General Hosting Knowledge Base</strong></span>
         </a>
 
         <!-- General hosting expert services -->
@@ -53,7 +57,7 @@
           <span class="icon has-text-success">
             <i class="fas fa-book-open"></i>
           </span>
-          <span><strong>Expert services menu</strong></span>
+          <span><strong>Expert Services Menu</strong></span>
         </a>
 
         <!-- The Cheat Sheet -->
@@ -63,7 +67,9 @@
           </span>
           <span><strong>The Cheat Sheet</strong></span>
         </a>
-
+        <!--Start Troubleshooting Tools -->
+        <p>
+        <h5>Troubleshooting Tools</h5>
         <!-- C3 hub -->
         <a href="https://godaddy.jiveon.com/community/c3/c3-hub" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
@@ -77,7 +83,15 @@
           <span class="icon has-text-success">
             <i class="fas fa-envelope"></i>
           </span>
-          <span><strong>SPLUNK</strong>></span>
+          <span><strong>Splunk</strong></span>
+        </a>
+
+        <!-- Approved test scripts -->
+        <a href="https://confluence.godaddy.com/display/C3PHS/General+-+Tools+-+Approved+Test+Scripts" target="_blank" class="button is-small is-dark">
+          <span class="icon has-text-success">
+            <i class="fas fa-file-archive"></i>
+          </span>
+          <span><strong>Approved Test Scripts</strong></span>
         </a>
 
         <!-- Toolzilla -->
@@ -173,5 +187,13 @@
 
 #tool-tab-right a {
   float: right;
+}
+
+h5 { 
+  margin: 1px;
+}
+
+a {
+  margin: 1px 0px 1px 0px;
 }
 </style>

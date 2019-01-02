@@ -23,7 +23,8 @@
       </div>
 
       <p class="buttons">
-
+        <!--Start Speed Test Tools -->
+        <h5>Speed Tests</h5>
         <!-- GTmetrix -->
         <a href="https://gtmetrix.com/" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
@@ -39,7 +40,10 @@
           </span>
           <span><strong>Pingdom</strong></span>
         </a>
-
+        
+        <!--Start DNS Tools -->
+        <p>
+        <h5>DNS Tools</h5>
         <!-- Whatsmydns -->
         <a href="https://www.whatsmydns.net/" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
@@ -63,7 +67,26 @@
           </span>
           <span><strong>DIG Web Interface</strong></span>
         </a>
+        
+        <!-- DNS Trails -->
+        <a href="https://securitytrails.com/dns-trails" target="_blank" class="button is-small is-dark">
+          <span class="icon has-text-success">
+            <i class="fas fa-globe"></i>
+          </span>
+          <span><strong>DNS Trails</strong></span>
+        </a>
 
+        <!-- Country Flags & IP Whois -->
+        <!-- <a href="https://addons.mozilla.org/en-US/firefox/addon/country-flags-ip-whois/" target="_blank" class="button is-small is-dark">
+          <span class="icon has-text-success">
+            <i class="fas fa-globe"></i>
+          </span>
+          <span><strong>DNS Browser Plugin</strong></span>
+        </a> -->
+
+        <!--Start SSL Tools -->
+        <p>
+        <h5>SSL Tools</h5>
         <!-- SSL Shopper -->
         <a href="https://www.sslshopper.com/ssl-checker.html" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
@@ -77,7 +100,7 @@
           <span class="icon has-text-success">
             <i class="fas fa-unlock"></i>
           </span>
-          <span><strong>Why no padlock</strong></span>
+          <span><strong>Why No Padlock</strong></span>
         </a>
 
         <!-- SSL Checker -->
@@ -88,6 +111,9 @@
           <span><strong>SSL Checker</strong></span>
         </a>
 
+        <!--Start Hosting Tools -->
+        <p>
+        <h5>Hosting Tools</h5>
         <!-- Host tracker -->
         <a href="https://www.host-tracker.com/" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
@@ -101,17 +127,21 @@
           <span class="icon has-text-success">
             <i class="fas fa-globe"></i>
           </span>
-          <span><strong>Geo Peeker</strong></span>
+          <span><strong>GeoPeeker</strong></span>
         </a>
 
-        <!-- DNS Trails -->
-        <a href="https://securitytrails.com/dns-trails" target="_blank" class="button is-small is-dark">
+        <!-- ShotSherpa -->
+        <a href="https://shotsherpa.com/" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
             <i class="fas fa-globe"></i>
           </span>
-          <span><strong>DNS Trails</strong></span>
+          <span><strong>ShotSherpa</strong></span>
         </a>
 
+        
+        <!--Start Email Tools -->
+        <p>
+        <h5>Email Tools</h5>
         <!-- Spam Haus Look-up -->
         <a href="https://www.spamhaus.org/lookup/" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
@@ -127,7 +157,7 @@
           </span>
           <span><strong>Domain black-list check</strong></span>
         </a>
-      </p>
+      
     </div>
     <!-- END Swat Tools section -->
 
@@ -213,5 +243,12 @@
 
 #tool-tab-right a {
   float: right;
+}
+h5 { 
+  margin: 1px;
+}
+
+a {
+  margin: 1px 0px 1px 0px;
 }
 </style>
