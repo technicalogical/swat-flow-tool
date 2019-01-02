@@ -21,12 +21,22 @@
         <img src="../assets/images/swatflowtool-full.png" width="180">
       </div>
       <!-- END Home page logo section -->
+
     </div>
+
     <!-- BEGIN Start button -->
     <div id="get-start" class="field is-grouped">
       <p class="control">
-        <router-link to="/SwatMenu" class="button is-small is-fullwidth is-success">
-          <strong>GET STARTED</strong>
+        <router-link to="/SwatFlow" class="button is-small is-fullwidth is-success">
+          <strong>S.W.A.T. Flow</strong>
+        </router-link>
+        <br>
+        <router-link to="/SwatNote" class="button is-small is-fullwidth is-success">
+          <strong>S.W.A.T. Note</strong>
+        </router-link>
+        <br>
+        <router-link to="/SwatTools" class="button is-small is-fullwidth is-success">
+          <strong>S.W.A.T. Tools</strong>
         </router-link>
       </p>
     </div>
@@ -39,7 +49,9 @@
     <!-- END swat motto statement -->
 
     <!-- END - Message of Swat FLow Chart -->
+    
     <router-view/>
+    
   </div>
   <!-- END - Primary application deck -->
   

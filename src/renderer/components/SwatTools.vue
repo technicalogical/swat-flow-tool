@@ -120,16 +120,9 @@
 </template>
 
 <script>
-export default({
-  el: '#swat-note-input',
- data: function() {
-    return {
-      name: "",
-      sitch: "",
-      domain: ""
-    }
-  }
-})
+export default {
+
+}
 </script>
 
 <style src="../flow-style.scss" ></style>
