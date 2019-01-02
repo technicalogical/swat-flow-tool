@@ -1,6 +1,6 @@
 {
   "name": "swat-flow-tool",
-  "version": "1.1.19",
+  "version": "1.1.22",
   "author": "macegd",
   "description": "A Flow Tool Project",
   "license": "MIT",
@@ -55,7 +55,8 @@
     "bulma": "^0.7.2",
     "vue": "^2.5.16",
     "vue-electron": "^1.0.0",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vue-select": "^2.5.1"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.6.3",

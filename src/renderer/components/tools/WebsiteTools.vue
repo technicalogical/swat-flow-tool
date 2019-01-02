@@ -39,7 +39,7 @@
           </span>
           <span><strong>Pingdom</strong></span>
         </a>
-
+      
         <!-- Whatsmydns -->
         <a href="https://www.whatsmydns.net/" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
@@ -63,6 +63,14 @@
           </span>
           <span><strong>DIG Web Interface</strong></span>
         </a>
+        
+        <!-- DNS Trails -->
+        <a href="https://securitytrails.com/dns-trails" target="_blank" class="button is-small is-dark">
+          <span class="icon has-text-success">
+            <i class="fas fa-globe"></i>
+          </span>
+          <span><strong>DNS Trails</strong></span>
+        </a>
 
         <!-- SSL Shopper -->
         <a href="https://www.sslshopper.com/ssl-checker.html" target="_blank" class="button is-small is-dark">
@@ -77,7 +85,7 @@
           <span class="icon has-text-success">
             <i class="fas fa-unlock"></i>
           </span>
-          <span><strong>Why no padlock</strong></span>
+          <span><strong>Why No Padlock</strong></span>
         </a>
 
         <!-- SSL Checker -->
@@ -101,17 +109,17 @@
           <span class="icon has-text-success">
             <i class="fas fa-globe"></i>
           </span>
-          <span><strong>Geo Peeker</strong></span>
+          <span><strong>GeoPeeker</strong></span>
         </a>
 
-        <!-- DNS Trails -->
-        <a href="https://securitytrails.com/dns-trails" target="_blank" class="button is-small is-dark">
+        <!-- ShotSherpa -->
+        <a href="https://shotsherpa.com/" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
             <i class="fas fa-globe"></i>
           </span>
-          <span><strong>DNS Trails</strong></span>
+          <span><strong>ShotSherpa</strong></span>
         </a>
-
+               
         <!-- Spam Haus Look-up -->
         <a href="https://www.spamhaus.org/lookup/" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">

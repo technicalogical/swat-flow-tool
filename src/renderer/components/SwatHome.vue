@@ -18,7 +18,7 @@
 
       <!-- BEGIN Home page logo section -->
       <div id="logo-main" class="content">
-        <img src="../assets/images/swatflowtool-full.png" width="180">
+        <img src="../assets/images/sft-logo.png" />
       </div>
       <!-- END Home page logo section -->
 

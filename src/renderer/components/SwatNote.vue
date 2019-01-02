@@ -1,7 +1,7 @@
 <template>
   
   <!-- BEGIN - Primary application deck -->
-  <div id="swat-deck">
+  <div id="note-deck">
 
     <!-- BEGIN - Application Primary nav section -->
     <nav class="tabs is-small">
@@ -36,16 +36,31 @@
           </span>
         </div>
         <p class="help is-info">Seperate multiple domains with commas.</p>
-      </div>   
+      </div>
+      <div class="field">
+        <div class="control">
+          <div class="select is-small">
+            <select id="methods" v-model="selected">
+              <option disabled value="testing">Please select one</option>
+              <option>A</option>
+              <option>B</option>
+              <option>C</option>
+            </select>
+          </div>
+        </div>
+      </div>
     </form>
+
     <!-- END Swat Note input section -->
     <p id="closed" class="is-danger"><strong>THIS PAGE IS NOT ACTIVE.</strong></p>
-    <!-- BEGIN Copy paste notes section -->
+    <!--  BEGIN Copy paste notes section -->
+
     <div id="call-notes">
       <p>#SWAT</p>
       <p>Customer name: {{ name }} </p>
       <p>Situation: {{ sitch }} </p>
       <p>Domain(s): {{ domain }} </p>
+      <p>Methods: {{ selected }} </p>
     </div>
     <!-- END Copy paste notes section -->
 
@@ -61,7 +76,7 @@
         <span class="icon">
           <i class="fas fa-times-circle"></i>
         </span>
-        <span>Clear fields</span>
+        <span><strong>RESET</strong></span>
       </button> 
     </p>
     <!-- END Note buttons section -->
@@ -73,21 +88,11 @@
 
 <script>
 export default({
-  el: '#swat-note-input',
- data: function() {
-    return {
-      name: "",
-      sitch: "",
-      domain: ""
-    }
+  el: '#methods',
+  data: {
+    selected: ''
   }
-});
-
-function ClearFields() {
-  document.getElementById('filled1').value = '';
-  document.getElementById('filled2').value = '';
-  document.getElementById('filled').value = ''
-}
+})
 </script>
 
 <style src="../flow-style.scss" ></style>

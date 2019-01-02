@@ -153,6 +153,7 @@ footer img {
   margin-right: auto;
   top: 8px;
   font-size: 10px;
+  letter-spacing: .1em
 }
 /* END | App footer CSS */
 
@@ -252,6 +253,15 @@ footer img {
 /* END | Swat Flow Vue CSS */
 
 /* BEGIN | Swat Note Vue CSS */
+#note-deck {
+  position: relative;
+  top: 0px;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  height: 600px;
+}
+
 #swat-note-input {
   position: relative;
   margin: 0px;
@@ -263,7 +273,7 @@ footer img {
 }
 
 #sitch-text {
-  margin-bottom: 30px;
+  margin-bottom: 12px;
 }
 
 #call-notes {
@@ -273,23 +283,25 @@ footer img {
   padding: 0px;
   border: 0px;
   width: 90%;
-  height: 160px;
+  height: 130px;
+  overflow: hidden;
 }
 
-#call-notes p {
-  margin: 10px;
-  font-size: 14px;
+#call-notes p { 
+  margin: 5px;
+  font-size: 12px;
 }
 
 #note-buttons {
-  position: relative;
+  position: absolute;
+  bottom: 0px;
   margin: 0px;
-  margin-left: 30px;
+  margin-left: 20px;
   margin-right: 20px;
   padding: 0px;
   border: 0px;
   width: 90%;
-  height: 60px;
+  height: 35px;
 }
 
 #closed {
@@ -350,5 +362,19 @@ footer img {
 #tool-tab-right a {
   float: right;
 }
+
+/* END | Swat Tool Vue CSS */
+
+
+
+h5 { 
+  margin: 1px;
+  padding: 0px;
+}
+
+a {
+  margin: 1px 0px 1px 0px;
+}
+
 /* END | Swat Tool Vue CSS */
 
