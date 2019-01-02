@@ -24,13 +24,15 @@
 
 
       <p class="buttons">
-
+         <!--Start S.W.A.T Tools -->
+        <p>
+        <h5 style="margin: 1px">S.W.A.T Tools</h5>
         <!-- SWAT confluence home page -->
         <a href="https://confluence.godaddy.com/pages/viewpage.action?spaceKey=HSWAT&title=SWAT+Team+Home" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
             <i class="fas fa-home"></i>
           </span>
-          <span><strong>S.W.A.T. Home page</strong></span>
+          <span><strong>S.W.A.T. Homepage</strong></span>
         </a>
 
         <!-- SWAT tier one confluence page -->
@@ -38,7 +40,7 @@
           <span class="icon has-text-success">
             <i class="fas fa-home"></i>
           </span>
-          <span><strong>S.W.A.T. TIer 1 Home page</strong></span>
+          <span><strong>S.W.A.T. Tier 1 Homepage</strong></span>
         </a>
 
         <!-- SWAT transfer guidelines -->
@@ -46,7 +48,7 @@
           <span class="icon has-text-success">
             <i class="fas fa-phone"></i>
           </span>
-          <span><strong>S.W.A.T. call transfer guidelines</strong></span>
+          <span><strong>S.W.A.T. Call Transfer Guidelines</strong></span>
         </a>
 
         <!-- SWAT tier one playbook -->
@@ -54,7 +56,7 @@
           <span class="icon has-text-success">
             <i class="fas fa-book"></i>
           </span>
-          <span><strong>S.W.A.T. tier 1 playbook</strong></span>
+          <span><strong>S.W.A.T. Tier 1 Playbook</strong></span>
         </a>
 
         <!-- SWAT team contacts -->
@@ -62,23 +64,19 @@
           <span class="icon has-text-success">
             <i class="fas fa-book"></i>
           </span>
-          <span><strong>S.W.A.T. team contacts</strong></span>
+          <span><strong>S.W.A.T. Team Contacts</strong></span>
         </a>
         
-        <!-- Approved test scripts -->
-        <a href="https://confluence.godaddy.com/display/C3PHS/General+-+Tools+-+Approved+Test+Scripts" target="_blank" class="button is-small is-dark">
-          <span class="icon has-text-success">
-            <i class="fas fa-file-archive"></i>
-          </span>
-          <span><strong>Approved test scripts</strong></span>
-        </a>
-
+        <!--Start S.W.A.T Tools -->
+        <p>
+        <h5 style="margin: 1px">Refund Tools</h5>
+        
         <!-- GoDaddy refund policy -->
         <a href="https://www.godaddy.com/agreements/showdoc?pageid=19963&prog_id=GoDaddy" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
             <i class="fas fa-dollar-sign"></i>
           </span>
-          <span><strong>GoDaddy refund policy</strong></span>
+          <span><strong>GoDaddy Refund Policy</strong></span>
         </a>
 
 
@@ -132,4 +130,4 @@ export default({
 })
 </script>
 
-<style src="../flow-style.scss" ></style>
+<style src="../flow-style.scss"></style>
