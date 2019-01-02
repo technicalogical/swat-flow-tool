@@ -40,9 +40,26 @@
 </template>
 
 <script>
-  export default {
+import { mapFields } from 'vuex-map-fields';
+
+export default {
+  name: 'App',
+  computed: {
+    // The `mapFields` function takes an array of
+    // field names and generates corresponding
+    // computed properties with getter and setter
+    // functions for accessing the Vuex store.
+    ...mapFields([
+      'name',
+      'sitch',
+	    'domain',
+	    'method',
+    ]),
+  },
+};
+  // export default {
     
-  }
+  // }
 </script>
 
 <style src="./flow-style.scss" ></style>

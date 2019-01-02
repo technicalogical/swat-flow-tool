@@ -54,23 +54,29 @@
      BEGIN Copy paste notes section -->
 
     <div id="call-notes">
+      
       <p>#SWAT</p>
       <p>Customer name: {{ name }} </p>
       <p>Situation: {{ sitch }} </p>
       <p>Domain(s): {{ domain }} </p>
       <p>Methods: {{ method }} </p>
+      
     </div>
     <!-- END Copy paste notes section -->
 
     <!-- BEGIN Note buttons section -->
-    <p id="note-buttons" class="buttons">
-      <button class="button is-small is-dark" value="">
+      <p id="note-buttons" class="buttons">
+      <button class="button is-small is-dark" value="" v-clipboard:copy="'#SWAT ' 
+      + ' Name: ' + name
+      + ' Situation: ' + sitch
+      + ' Domain: ' + domain 
+      + ' Method: ' + method">
         <span class="icon has-text-success">
           <i class="fas fa-clipboard"></i>
         </span>
         <span>Copy to Clipboard</span>
       </button>
-      <button type="button" value="" class="button is-small is-danger" onclick="document.getElementById('filled1').value = ''">
+      <button type="button" value="" class="button is-small is-danger" onclick="document.getElementById('filled1').value = ''" >
         <span class="icon">
           <i class="fas fa-times-circle"></i>
         </span>
@@ -85,22 +91,22 @@
 </template>
 
 <script>
-export default({
-  el: '#swat-note-input',
- data: function() {
-    return {
-      name: "",
-      sitch: "",
-      domain: "",
-      method: ""
-    }
-  }
-});
+import { mapFields } from 'vuex-map-fields';
 
-function ClearFields() {
-  document.getElementById('filled1').value = '';
-  document.getElementById('filled2').value = '';
-  document.getElementById('filled').value = ''
+export default {
+  name: 'App',
+  computed: {
+    // The `mapFields` function takes an array of
+    // field names and generates corresponding
+    // computed properties with getter and setter
+    // functions for accessing the Vuex store.
+    ...mapFields([
+      'name',
+      'sitch',
+	    'domain',
+	    'method',
+    ]),
+  },
 }
 </script>
 
