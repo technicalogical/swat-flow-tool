@@ -15,12 +15,10 @@
     <!-- END - Application Primary nav section -->
 
     <!-- START Opening comments for Swat FLow Chart -->
-    <div id="flow-start-message">
-      <article class="message is-small is-dark">
-        <div class="message-body">
-          This is the hosting <strong>Swat Flow Chart</strong>. It is designed to guide you quickly through the most common issues our customers have when calling in. This Swat Flow Chart can also be  found at <a href="https://x.co/swat" target="_blank"><strong>x.co/swat</strong></a>. Start with your options below to begin to work your way throgh the flow chart.
-        </div>
-      </article>
+    <div id="flow-start-message" class="content is-small">
+      <div class="notification is-dark">
+        This is the hosting <strong>Swat Flow Chart</strong>. It is designed to guide you quickly through the most common issues our customers have when calling in. This Swat Flow Chart can also be found at <a href="https://x.co/swat" target="_blank"><strong>x.co/swat</strong></a>. Start with your options below to begin to work your way through the flow chart.
+      </div>
     </div>
     <!-- END Opening comments for Swat Flow Chart -->
 

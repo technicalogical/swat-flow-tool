@@ -26,13 +26,13 @@
       <div class="content is-medium" id="flow-deck-two">
       <p>Can you load a test file from the hosting?</p>
       <p class="buttons">
-          <router-link to="/flow/fivehundrederror/FosYes" class="button is-light">
+          <router-link to="/flow/fivehundrederror/FosNo" class="button is-light">
             <span class="icon has-text-success">
               <i class="fas fa-check-circle"></i>
             </span>
             <span><strong>Yes</strong>. Test file loads</span>
           </router-link>  
-          <router-link to="/flow/fivehundrederror/FosNo" class="button is-light">
+          <router-link to="/flow/fivehundrederror/FosYes" class="button is-light">
             <span class="icon has-text-danger">
               <i class="fas fa-exclamation-circle"></i>
             </span>

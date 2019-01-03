@@ -18,9 +18,30 @@
     <div id="tool-page" class="content is-small">
 
       <!-- Swat Tools opening note -->
-      <div class="notification is-success">
+      <div class="notification is-dark">
         Here you will find a grouping of the most useful Hosting links tactically aquired from <strong>GoDaddy</strong> tribal knowledge. It is a primary recommendation that you bookmark your favorites in browser to be better prepared for future troubleshooting.
       </div>
+
+      <!-- Tool page title -->
+      <div id="tool-tab-center">
+        <p class="is-size-6"><strong>Hosting Tools</strong></p>
+      </div>
+
+      <!-- BEGIN - Swat Tool Tabs -->
+      <div id="tool-tabs">
+        <div id="tool-tab-left">
+          
+        </div>
+        <div id="tool-tab-right">
+          <router-link to="/SwatTools" class="button is-small is-dark">
+            <span><strong>Swat Tools</strong></span>
+            <span class="icon is-large">
+              <i class="fa fa-angle-right fa-2x"></i>
+            </span>
+          </router-link>
+        </div>
+      </div>
+      <!-- END - Swat Tool Tabs -->
 
       <p class="buttons">
       <!--Start Restore and Migration Tools -->
@@ -103,22 +124,6 @@
       </p>
     </div>
     <!-- END Swat Tools section -->
-
-    <!-- BEGIN - Swat Tool Tabs -->
-    <div id="tool-tabs">
-      <div id="tool-tab-left">
-        
-      </div>
-      <div id="tool-tab-right">
-        <router-link to="/SwatTools" class="button is-small is-white">
-          <span><strong>Swat Tools</strong></span>
-          <span class="icon is-large">
-            <i class="fa fa-angle-right fa-2x"></i>
-          </span>
-        </router-link>
-      </div>
-    </div>
-    <!-- END - Swat Tool Tabs -->
 
   </div>
   <!-- END - Primary application deck -->

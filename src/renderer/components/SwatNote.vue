@@ -20,7 +20,7 @@
       <div class="field">
         <div class="control has-icons-left has-icons-right">
           <input id="filled1" v-model="name" class="input is-small is-hovered" type="text" placeholder="Customer Name" />
-          <span class="icon is-small is-left has-text-info">
+          <span class="icon is-small is-left has-text-dark">
             <i class="fas fa-user"></i>
           </span>
         </div>
@@ -31,7 +31,7 @@
       <div class="field">
         <div class="control has-icons-left has-icons-right">
           <input id="filled3" v-model="domain" class="input is-small is-hovered" type="text" placeholder="Domain(s)" />
-          <span class="icon is-small is-left has-text-info">
+          <span class="icon is-small is-left has-text-dark">
             <i class="fas fa-globe"></i>
           </span>
         </div>
@@ -71,7 +71,7 @@
       <button class="button is-small is-dark" value="" v-clipboard:copy="'#SWAT ' 
       + ' Name: ' + name
       + ' Situation: ' + sitch
-      + ' Domain: ' + domain 
+      + ' Domain: ' + domain
       + ' Method: ' + method">
         <span class="icon has-text-success">
           <i class="fas fa-clipboard"></i>

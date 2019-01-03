@@ -27,15 +27,15 @@
     <!-- BEGIN Start button -->
     <div id="get-start" class="field is-grouped">
       <p class="control">
-        <router-link to="/SwatFlow" class="button is-small is-fullwidth is-success">
+        <router-link to="/SwatFlow" class="button is-small is-fullwidth is-dark">
           <strong>S.W.A.T. Flow</strong>
         </router-link>
         <br>
-        <router-link to="/SwatNote" class="button is-small is-fullwidth is-success">
+        <router-link to="/SwatNote" class="button is-small is-fullwidth is-dark">
           <strong>S.W.A.T. Note</strong>
         </router-link>
         <br>
-        <router-link to="/SwatTools" class="button is-small is-fullwidth is-success">
+        <router-link to="/SwatTools" class="button is-small is-fullwidth is-dark">
           <strong>S.W.A.T. Tools</strong>
         </router-link>
       </p>

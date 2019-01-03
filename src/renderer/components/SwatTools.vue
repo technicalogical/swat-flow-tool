@@ -18,9 +18,36 @@
     <div id="tool-page" class="content is-small">
 
       <!-- Swat Tools opening note -->
-      <div class="notification is-success">
+      <div class="notification is-dark">
         Here you will find strategically organized groupings of the most useful links tactically aquired from <strong>GoDaddy</strong> tribal knowledge. It is a primary recommendation that you bookmark your favorites in browser to be better prepared for future troubleshooting.
       </div>
+
+      <!-- Tool page title -->
+      <div id="tool-tab-center">
+        <p class="is-size-6"><strong>S.W.A.T. Tools</strong></p>
+      </div>
+
+      <!-- BEGIN - Swat Tool Tabs -->
+      <div id="tool-tabs">
+        <div id="tool-tab-left">
+          <router-link to="/tools/HostingTools" class="button is-small is-dark">
+            <span class="icon is-medium">
+              <i class="fa fa-angle-left fa-2x"></i>
+            </span>
+            <span><strong>Hosting Tools</strong></span>
+          </router-link>
+        </div>
+
+        <div id="tool-tab-right">
+          <router-link to="/tools/WebsiteTools" class="button is-small is-dark">
+            <span><strong>Website Tools</strong></span>
+            <span class="icon is-large">
+              <i class="fa fa-angle-right fa-2x"></i>
+            </span>
+          </router-link>
+        </div>
+      </div>
+      <!-- END - Swat Tool Tabs -->
 
       <!--Start S.W.A.T Tools -->
       <p class="buttons">
@@ -83,27 +110,6 @@
       </p>
     </div>
     <!-- END Swat Tools section -->
-
-    <!-- BEGIN - Swat Tool Tabs -->
-    <div id="tool-tabs">
-      <div id="tool-tab-left">
-        <router-link to="/tools/HostingTools" class="button is-small is-white">
-          <span class="icon is-medium">
-            <i class="fa fa-angle-left fa-2x"></i>
-          </span>
-          <span><strong>Hosting Tools</strong></span>
-        </router-link>
-      </div>
-      <div id="tool-tab-right">
-        <router-link to="/tools/WebsiteTools" class="button is-small is-white">
-          <span><strong>Website Tools</strong></span>
-          <span class="icon is-large">
-            <i class="fa fa-angle-right fa-2x"></i>
-          </span>
-        </router-link>
-      </div>
-    </div>
-    <!-- END - Swat Tool Tabs -->
 
   </div>
   <!-- END - Primary application deck -->
