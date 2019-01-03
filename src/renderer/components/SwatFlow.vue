@@ -23,8 +23,8 @@
     <!-- END Opening comments for Swat Flow Chart -->
 
     <!-- BEGIN - Primary application deck -->
-    <div class="content" id="flow"> 
-      <div class="content is-medium" id="flow-deck-two">
+    <div class="content" id="flow">
+      <div class="content is-small" id="flow-deck-two">
         <p>Get started by selecting a common error below.</p>
         <p class="buttons">
           <router-link to="/flow/FiveError" class="button is-light">

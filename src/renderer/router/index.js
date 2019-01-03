@@ -7,6 +7,7 @@ import SwatHome from '@/components/SwatHome'
 import SwatFlow from '@/components/SwatFlow'
 import SwatNote from '@/components/SwatNote'
 import SwatTools from '@/components/SwatTools'
+import SwatLinks from '@/components/SwatLinks'
 import SwatSettings from '@/components/SwatSettings'
 // END Primary imported routes
 
@@ -137,6 +138,11 @@ export default new Router({
       path: '/SwatTools',
       name: 'Swat Tools',
       component: SwatTools
+    },
+    {
+      path: '/SwatLinks',
+      name: 'Swat Links',
+      component: SwatLinks
     },
     {
       path: '/SwatSettings',

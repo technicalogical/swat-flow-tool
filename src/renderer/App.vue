@@ -12,20 +12,19 @@
 
     <!-- Button to close the app -->
     <div id="app-top-links">
-      <p class="buttons is-right">
-        <a id="close-btn" onclick="self.close()" class="button is-small is-white">
-          <span class="icon">
-            <i class="fas fa-times fa-m"></i>
-          </span> 
-        </a>
-      </p>
 
-      <!-- Button to link to the conlfuence page -->
-      <p id="helper-one" class="buttons">
-        <a class="button is-white" href="https://confluence.godaddy.com/display/HSWAT/SWAT+Flow+Tool" target="_blank" title="Give Flow Tool feedback">
-          <span class="icon has-text-dark">
-            <i class="fa fa-lightbulb is-medium"></i>
-          </span>
+      <!-- Button to link to CRM --> 
+      <a id="crm-icon" href="https://x.co/webcrm" title="Launch CRM" target="_blank" class="button is-white is-small">
+        <span class="icon is-small">
+          <i class="fas fa-search fa-lg"></i>
+        </span>
+      </a>
+
+      <p class="buttons is-right">
+        <a id="close-btn" onclick="self.close()" class="button is-small is-white" title="Close SWAT Tool">
+          <span class="icon">
+            <i class="fas fa-times fa-lg"></i>
+          </span> 
         </a>
       </p>
 
@@ -51,8 +50,18 @@
   
     <!-- BEGIN - Application footer section -->
       <footer>
+
+        <!-- Button to link to the conlfuence page -->
+        <p id="helper-one" class="buttons">
+          <a class="button is-white" href="https://confluence.godaddy.com/display/HSWAT/SWAT+Flow+Tool" target="_blank" title="Give Feedback">
+            <span class="icon has-text-dark">
+              <i id="helper-icon" class="far fa-comment-alt is-lg"></i>
+            </span>
+          </a>
+        </p>
+
         <img src="./assets/images/sft-green.png" />
-        <p id="app-vers" class="is-italic"><strong>SWAT</strong> Flow Tool Beta ver <strong>1.1.25</strong> (<strong>Windu</strong>)</p>  
+        <p id="app-vers" class="is-italic"><strong>SWAT</strong> Flow Tool Beta ver <strong>1.1.26</strong> (<strong>Windu</strong>)</p>  
       </footer>
     <!-- END - Application footer section -->
   </div>

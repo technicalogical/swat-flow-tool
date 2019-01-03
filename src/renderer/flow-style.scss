@@ -1,4 +1,5 @@
 /* Full Application CSS for swat-flow-tool */
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 @keyframes fadein {
@@ -91,14 +92,19 @@ a:active {
   border: 0px;
 }
 
-#helper-one {
+#crm-icon {
   position: absolute;
-  top: 1px;
-  left: 2px;
-  margin: 0px;
-  padding: 0px;
-
+  margin: 3px;
 }
+
+#crm-icon:hover {
+  color: #3fb54f;
+}
+
+#close-btn:hover {
+  color: #3fb54f;
+}
+
 
 #settings-one {
   position: absolute;
@@ -108,6 +114,10 @@ a:active {
   padding: 0px;
   z-index: 1;
 
+}
+
+#settings-one:hover {
+  color: #3fb54f;
 }
 /* END | Application top icon links CSS */
 
@@ -169,6 +179,20 @@ footer img {
   font-size: 10px;
   letter-spacing: .1em
 }
+
+#helper-one {
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+#helper-icon:hover {
+  color: #3fb54f;
+}
+
 /* END | App footer CSS */
 
 /* BEGIN | App home page CSS */
@@ -358,7 +382,7 @@ footer img {
   margin: 0px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   padding:0px;
   border: 0px;
   width: 100%;
@@ -401,6 +425,35 @@ footer img {
   float: right;
 }
 
+#dns-tool {
+  position: relative;
+  margin: 0px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+  height: 70px;
+  border: 0px;
+}
+
+#dns-help {
+  margin-bottom: 0px;
+}
+
+#dns-output {
+  margin-top: 5px;
+  float: left;
+  width: 55%;
+}
+
+#dns-reset {
+  float: right;
+  margin-top: 5px;
+  margin-right: 5px;
+  width: 70px;
+}
 /* END | Swat Tool Vue CSS */
 
 
