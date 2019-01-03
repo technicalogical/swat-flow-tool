@@ -23,14 +23,25 @@
     <!-- BEGIN 500 Error flow section -->
     <div class="content has-text-centered" id="flow">    
       <div class="notification is-danger">
-        <i class="fas fa-ban">Stop</i>
         <strong>STOP HERE</strong>.
       </div> 
       <article class="message is-small is-success">
         <div class="message-body">
-          Sell WPPS (Wordpress Premium Support) in order to help customer fix issues with core files.
+          Sell <strong>WPPS (Wordpress Premium Support)</strong> in order to help customer fix issues with core files.
         </div>
       </article>
+
+      <!-- BEGIN - Back button -->
+      <p class="buttons">
+        <router-link to="/flow/fivehundrederror/MwpYesNoNo" class="button is-small is-info">
+          <span class="icon has-text-light">
+            <i class="fas fa-chevron-left"></i>
+          </span>
+          <span>BACK</span>
+        </router-link>
+      </p>
+      <!-- END - Back button -->
+
       <router-link to="/SwatFlow" class="button is-dark is-fullwidth">Return to start</router-link>
       <router-view/>
     </div>

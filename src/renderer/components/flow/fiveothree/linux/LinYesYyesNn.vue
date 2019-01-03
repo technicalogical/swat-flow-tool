@@ -25,7 +25,7 @@
       <div class="notification is-danger">
         <strong>STOP HERE</strong>.
       </div>
-      <article class="message is-info">
+      <article class="message is-small is-info">
         <div class="message-body">
           Advise the customer reveiw their files further. There is an issue somewhere within the code of their website.
         </div>
@@ -35,6 +35,18 @@
           Discuss possible upgrade to the hosting platform to meet the resource needs of the website. The customer may need <strong>WPPS (Wordpress Premium Support)</strong> if this is a Wordpress based website.
         </div>
       </article>
+
+      <!-- BEGIN - Back button -->
+      <p class="buttons">
+        <router-link to="/flow/fiveothree/linux/LinYesYyesN" class="button is-small is-info">
+          <span class="icon has-text-light">
+            <i class="fas fa-chevron-left"></i>
+          </span>
+          <span>BACK</span>
+        </router-link>
+      </p>
+      <!-- END - Back button -->
+
       <router-link to="/SwatFlow" class="button is-dark is-fullwidth">Return to start</router-link>
       <router-view/>
     </div>

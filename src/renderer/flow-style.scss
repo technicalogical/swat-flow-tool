@@ -136,6 +136,10 @@ nav {
   padding: 0px;
   border: 0px;
 }
+
+nav ul {
+  border: 0px;
+}
 /* END | App top nav CSS */
 
 /* BEGIN | App footer CSS */
@@ -332,6 +336,13 @@ footer img {
   margin-left: auto;
   margin-right: auto;
   border: 0px;
+}
+
+#tool-sec {
+  position: relative;
+  margin: 0px;
+  margin-top:10px;
+  padding: 0px;
 }
 
 #tool-title {

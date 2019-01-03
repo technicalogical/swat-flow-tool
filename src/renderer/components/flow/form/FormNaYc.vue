@@ -25,7 +25,7 @@
       <div class="notification is-danger">
         <strong>STOP HERE</strong>.
       </div>
-      <article class="message is-info">
+      <article class="message is-small is-info">
         <div class="message-body">
           Advise the customer that they need to change the subject line they are using for the form mail. Have them send another form mail after they have completed this step.
         </div>
@@ -35,6 +35,18 @@
           If this is a Wordpress based form mailer offer <strong>WPPS (Wordpress Premium Support)</strong> to help resolve this issue.
         </div>
       </article>
+
+      <!-- BEGIN - Back button -->
+        <p class="buttons">
+          <router-link to="/flow/form/FormNaY" class="button is-small is-info">
+            <span class="icon has-text-light">
+              <i class="fas fa-chevron-left"></i>
+            </span>
+            <span>BACK</span>
+          </router-link>
+        </p>
+        <!-- END - Back button -->
+
       <router-link to="/SwatFlow" class="button is-dark is-fullwidth">Return to start</router-link>
       <router-view/>
     </div>

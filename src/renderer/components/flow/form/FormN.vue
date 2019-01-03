@@ -30,6 +30,7 @@
           Transfer the customer to a Tier 2 agent for further troubleshooting.
         </div>
       </article>
+      
       <router-link to="/SwatFlow" class="button is-dark is-fullwidth">Return to start</router-link>
       <router-view/>
     </div>

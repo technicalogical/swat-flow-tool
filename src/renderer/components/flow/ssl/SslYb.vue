@@ -30,6 +30,18 @@
           Advise that due to the <strong>third party</strong> nature of the certificate they will need to troubleshoot to resolve the issue with the SSL.
         </div>
       </article>
+
+      <!-- BEGIN - Back button -->
+      <p class="buttons">
+        <router-link to="/flow/ssl/SslY" class="button is-small is-info">
+          <span class="icon has-text-light">
+            <i class="fas fa-chevron-left"></i>
+          </span>
+          <span>BACK</span>
+        </router-link>
+      </p>
+      <!-- END - Back button -->
+
       <article class="message is-success">
         <div class="message-body">
           Offer <strong>HELP</strong> documentation for the customer to follow while troubleshooting the SSL.

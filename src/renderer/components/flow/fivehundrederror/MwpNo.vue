@@ -37,7 +37,7 @@
 
       <!-- BEGIN - Back button -->
       <p class="buttons">
-        <router-link to="/flow/fivehundrederror/Wpad" class="button is-small is-info">
+        <router-link to="/flow/fivehundrederror/WpadNo" class="button is-small is-info">
           <span class="icon has-text-light">
             <i class="fas fa-chevron-left"></i>
           </span>

@@ -30,6 +30,18 @@
           You have resolved the issue for the customer. The website should be loading in browser as intended.
         </div>
       </article>
+
+      <!-- BEGIN - Back button -->
+      <p class="buttons">
+        <router-link to="/flow/ssl/SslNb" class="button is-small is-info">
+          <span class="icon has-text-light">
+            <i class="fas fa-chevron-left"></i>
+          </span>
+          <span>BACK</span>
+        </router-link>
+      </p>
+      <!-- END - Back button -->
+
       <router-link to="/SwatFlow" class="button is-dark is-fullwidth">Return to start</router-link>
       <router-view/>
     </div>

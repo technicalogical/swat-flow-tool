@@ -30,6 +30,18 @@
           Transfer the customer to a Tier 2 agent for further troubleshooting.
         </div>
       </article>
+
+      <!-- BEGIN - Back button -->
+      <p class="buttons">
+        <router-link to="/flow/fiveothree/mwp/MwpYyes" class="button is-small is-info">
+          <span class="icon has-text-light">
+            <i class="fas fa-chevron-left"></i>
+          </span>
+          <span>BACK</span>
+        </router-link>
+      </p>
+      <!-- END - Back button -->
+
       <router-link to="/SwatFlow" class="button is-dark is-fullwidth">Return to start</router-link>
       <router-view/>
     </div>
