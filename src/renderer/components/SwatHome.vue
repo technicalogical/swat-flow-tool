@@ -9,6 +9,7 @@
         <li><router-link to="/SwatFlow">Swat Flow</router-link></li>
         <li><router-link to="/SwatNote">Swat Note</router-link></li>
         <li><router-link to="/SwatTools">Swat Tools</router-link></li>
+        <li><router-link to="/SwatLinks">Swat Links</router-link></li>
       </ul>  
     </nav>
     <!-- END - Application Primary nav section -->
@@ -37,6 +38,10 @@
         <br>
         <router-link to="/SwatTools" class="button is-small is-fullwidth is-dark">
           <strong>S.W.A.T. Tools</strong>
+        </router-link>
+        <br>
+        <router-link to="/SwatLinks" class="button is-small is-fullwidth is-dark">
+          <strong>S.W.A.T. Links</strong>
         </router-link>
       </p>
     </div>

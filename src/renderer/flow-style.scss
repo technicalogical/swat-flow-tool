@@ -222,7 +222,7 @@ footer img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  border: 0px solid;
+  border: 0px;
 }
 
 #swat-motto {
@@ -232,7 +232,7 @@ footer img {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-style: italic;
   color: black;
-  top: 170px;
+  top: 150px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -351,7 +351,7 @@ footer img {
 }
 /* END | Swat Note Vue CSS */
 
-/* START | Swat Tool Vue CSS */
+/* START | Swat Tools & Links Vue CSS */
 #tool-page {
   position: relative;
   width: 90%;
@@ -439,6 +439,11 @@ footer img {
 }
 
 #dns-help {
+  margin-bottom: 0px;
+}
+
+#link-help {
+  margin-top: 10px;
   margin-bottom: 0px;
 }
 

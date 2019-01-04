@@ -10,6 +10,7 @@
         <li><router-link to="/SwatFlow">Swat Flow</router-link></li>
         <li><router-link to="/SwatNote">Swat Note</router-link></li>
         <li class="is-active"><router-link to="/SwatTools">Swat Tools</router-link></li>
+        <li><router-link to="/SwatLinks">Swat Links</router-link></li>
       </ul>  
     </nav>
     <!-- END - Application Primary nav section -->
@@ -24,14 +25,14 @@
 
       <!-- Tool page title -->
       <div id="tool-tab-center">
-        <p class="is-size-6"><strong>Website Tools</strong></p>
+        <p class="is-size-6"><strong>Website Links</strong></p>
       </div>
 
       <!-- BEGIN - Swat Tool Tabs -->
       <div id="tool-tabs">
         <div id="tool-tab-left">
-          <router-link to="/SwatTools" class="button is-small is-dark">
-            <span class="icon is-large">
+          <router-link to="/SwatLinks" class="button is-small is-dark">
+            <span class="icon is-large has-text-success">
               <i class="fa fa-angle-left fa-2x"></i>
             </span>
             <span><strong>Swat Tools</strong></span>
@@ -45,6 +46,7 @@
 
       <p class="buttons">
 
+        <p id="link-help" class="help">Site speed</p>
         <!-- GTmetrix -->
         <a href="https://gtmetrix.com/" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
@@ -61,6 +63,7 @@
           <span><strong>Pingdom</strong></span>
         </a>
       
+        <p id="link-help" class="help">DNS</p>
         <!-- Whatsmydns -->
         <a href="https://www.whatsmydns.net/" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
@@ -93,6 +96,7 @@
           <span><strong>DNS Trails</strong></span>
         </a>
 
+        <p id="link-help" class="help">SSL validation</p>
         <!-- SSL Shopper -->
         <a href="https://www.sslshopper.com/ssl-checker.html" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
@@ -117,6 +121,7 @@
           <span><strong>SSL Checker</strong></span>
         </a>
 
+        <p id="link-help" class="help">Website propagation</p>
         <!-- Host tracker -->
         <a href="https://www.host-tracker.com/" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
@@ -140,7 +145,8 @@
           </span>
           <span><strong>ShotSherpa</strong></span>
         </a>
-               
+
+        <p id="link-help" class="help">Black-list checking</p>       
         <!-- Spam Haus Look-up -->
         <a href="https://www.spamhaus.org/lookup/" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
@@ -156,7 +162,7 @@
           </span>
           <span><strong>Domain black-list check</strong></span>
         </a>
-      </p>
+      
     </div>
     <!-- END Swat Tools section -->
 

@@ -53,7 +53,7 @@
 
         <!-- Button to link to the conlfuence page -->
         <p id="helper-one" class="buttons">
-          <a class="button is-white" href="https://confluence.godaddy.com/display/HSWAT/SWAT+Flow+Tool" target="_blank" title="Give Feedback">
+          <a class="button is-white" href="http://x.co/flowtool" target="_blank" title="Give Feedback">
             <span class="icon has-text-dark">
               <i id="helper-icon" class="far fa-comment-alt is-lg"></i>
             </span>
@@ -61,7 +61,7 @@
         </p>
 
         <img src="./assets/images/sft-green.png" />
-        <p id="app-vers" class="is-italic"><strong>SWAT</strong> Flow Tool Beta ver <strong>1.1.26</strong> (<strong>Windu</strong>)</p>  
+        <p id="app-vers" class="is-italic"><strong>SWAT</strong> Flow Tool Beta ver <strong>1.1.27</strong> (<strong>Windu</strong>)</p>  
       </footer>
     <!-- END - Application footer section -->
   </div>

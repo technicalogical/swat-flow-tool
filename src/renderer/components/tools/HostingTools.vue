@@ -10,6 +10,7 @@
         <li><router-link to="/SwatFlow">Swat Flow</router-link></li>
         <li><router-link to="/SwatNote">Swat Note</router-link></li>
         <li class="is-active"><router-link to="/SwatTools">Swat Tools</router-link></li>
+        <li><router-link to="/SwatLinks">Swat Links</router-link></li>
       </ul>  
     </nav>
     <!-- END - Application Primary nav section -->
@@ -19,12 +20,12 @@
 
       <!-- Swat Tools opening note -->
       <div class="notification is-dark">
-        Here you will find a grouping of the most useful Hosting links tactically aquired from <strong>GoDaddy</strong> tribal knowledge. It is a primary recommendation that you bookmark your favorites in browser to be better prepared for future troubleshooting.
+        These are a collection of links primarliy related to hosting needs, sourced from the  <strong>GoDaddy</strong> tribal knowledge base. Bookmark your favorites in browser to be better prepared for future troubleshooting.
       </div>
 
       <!-- Tool page title -->
       <div id="tool-tab-center">
-        <p class="is-size-6"><strong>Hosting Tools</strong></p>
+        <p class="is-size-6"><strong>Hosting Links</strong></p>
       </div>
 
       <!-- BEGIN - Swat Tool Tabs -->
@@ -33,9 +34,9 @@
           
         </div>
         <div id="tool-tab-right">
-          <router-link to="/SwatTools" class="button is-small is-dark">
+          <router-link to="/SwatLinks" class="button is-small is-dark">
             <span><strong>Swat Tools</strong></span>
-            <span class="icon is-large">
+            <span class="icon is-large has-text-success">
               <i class="fa fa-angle-right fa-2x"></i>
             </span>
           </router-link>
@@ -43,9 +44,10 @@
       </div>
       <!-- END - Swat Tool Tabs -->
 
+      <!-- BEGIN Links section -->
       <p class="buttons">
-      <!--Start Restore and Migration Tools -->
         
+        <p id="link-help" class="help">Restores & Migrations</p>
         <!-- Restore U -->
         <a href="https://hs.int.godaddy.com/restore-u/#/index" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
@@ -61,9 +63,8 @@
           </span>
           <span><strong>Migrate U</strong></span>
         </a>
-        <!--Start Knowledgebase Tools -->
-        
-        
+
+        <p id="link-help" class="help">General hosting tools</p>
         <!-- Hosting Kb -->
         <a href="https://confluence.godaddy.com/display/C3PHS/Hosting+Support+Knowledge+Base+-+Hitchhikers+Guide+to+Hosting" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
@@ -87,9 +88,7 @@
           </span>
           <span><strong>The Cheat Sheet</strong></span>
         </a>
-        <!--Start Troubleshooting Tools -->
-      
-        
+             
         <!-- C3 hub -->
         <a href="https://godaddy.jiveon.com/community/c3/c3-hub" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
@@ -98,7 +97,7 @@
           <span><strong>C3 Hub</strong></span>
         </a>
         
-        <!-- C3 hub -->
+        <!-- SPLUNK> -->
         <a href="https://godaddy.splunkcloud.com/en-US/app/ahs/search" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
             <i class="fas fa-envelope"></i>
@@ -121,7 +120,7 @@
           </span>
           <span><strong>Toolzilla</strong></span>
         </a>
-      </p>
+      
     </div>
     <!-- END Swat Tools section -->
 

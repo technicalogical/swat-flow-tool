@@ -9,7 +9,8 @@
         <li><router-link to="/">Home</router-link></li>
         <li><router-link to="/SwatFlow">Swat Flow</router-link></li>
         <li><router-link to="/SwatNote">Swat Note</router-link></li>
-        <li class="is-active"><router-link to="/SwatTools">Swat Tools</router-link></li>
+        <li><router-link to="/SwatTools">Swat Tools</router-link></li>
+        <li class="is-active"><router-link to="/SwatLinks">Swat Links</router-link></li>
       </ul>  
     </nav>
     <!-- END - Application Primary nav section -->
@@ -31,7 +32,7 @@
       <div id="tool-tabs">
         <div id="tool-tab-left">
           <router-link to="/tools/HostingTools" class="button is-small is-dark">
-            <span class="icon is-medium">
+            <span class="icon is-large has-text-success">
               <i class="fa fa-angle-left fa-2x"></i>
             </span>
             <span><strong>Hosting Links</strong></span>
@@ -41,7 +42,7 @@
         <div id="tool-tab-right">
           <router-link to="/tools/WebsiteTools" class="button is-small is-dark">
             <span><strong>Website Links</strong></span>
-            <span class="icon is-large">
+            <span class="icon is-large has-text-success">
               <i class="fa fa-angle-right fa-2x"></i>
             </span>
           </router-link>
@@ -49,20 +50,10 @@
       </div>
       <!-- END - Swat Tool Tabs -->
 
-      <!-- BEGIN - Swat DNS Section -->
-      <div id="dns-tool" class="content">
-        <div class="control">
-          <input class="input is-hovered is-small" type="text" placeholder="Check DNS | enter domain name here.">
-        </div>
-        <div id="dns-output" class="control">
-          <input class="input is-hovered is-small" type="text" value="IP Address" readonly>
-        </div>
-        <button id="dns-reset" class="button is-small is-danger">Clear</button>
-      </div>
-
-      <!--Start S.W.A.T Tools section -->
+      <!--Start SWAT Links section -->
       <p class="buttons">
          
+        <p id="link-help" class="help">S.W.A.T. Team Links</p>
         <!-- SWAT confluence home page -->
         <a href="https://confluence.godaddy.com/pages/viewpage.action?spaceKey=HSWAT&title=SWAT+Team+Home" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
@@ -102,7 +93,8 @@
           </span>
           <span><strong>S.W.A.T. Team Contacts</strong></span>
         </a>
-           
+
+        <p id="link-help" class="help">GoDaddy Refund Policy</p>  
         <!-- GoDaddy refund policy -->
         <a href="https://www.godaddy.com/agreements/showdoc?pageid=19963&prog_id=GoDaddy" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
@@ -118,9 +110,9 @@
           </span>
           <span><strong>The Refund Toolkit</strong></span>
         </a>
-      </p>
+      
     </div>
-    <!-- END Swat Tools section -->
+    <!-- END SWAT Links section -->
 
   </div>
   <!-- END - Primary application deck -->
