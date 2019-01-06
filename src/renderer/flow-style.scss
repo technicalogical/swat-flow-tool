@@ -19,7 +19,7 @@ body {
   padding: 0px;
   width: 450px;
   font-family: 'Open Sans', sans-serif;
-  border: 1px solid hsl(204, 86%, 53%);
+  border: 1px solid hsl(217, 71%, 53%);
   background-color: #fff
 }
 
@@ -105,7 +105,6 @@ a:active {
   color: #3fb54f;
 }
 
-
 #settings-one {
   position: absolute;
   top: 30px;
@@ -142,12 +141,8 @@ nav {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  width: 98%;
+  width: 97%;
   padding: 0px;
-  border: 0px;
-}
-
-nav ul {
   border: 0px;
 }
 /* END | App top nav CSS */
@@ -165,9 +160,15 @@ footer {
   font-size: 20px;
 }
 
-footer img {
+#footer-img {
   position: relative;
-  top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 38px;
+  width: 200px; 
+  top: 6px;
+  background-image: url(./assets/images/sft-green.png);
 }
 
 #app-vers {
@@ -193,6 +194,19 @@ footer img {
   color: #3fb54f;
 }
 
+#helper-two {
+  position: absolute;
+  top: 1px;
+  right: 2px;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+#helper-icon:hover {
+  color: #3fb54f;
+}
+
 /* END | App footer CSS */
 
 /* BEGIN | App home page CSS */
@@ -206,6 +220,9 @@ footer img {
 
 #logo-main {
   position: relative;
+  width: 180px;
+  height: 129px;
+  background-image: url(./assets/images/sft-logo.png);
   text-align: center;
   top: 30px;
   display: block;
@@ -473,4 +490,3 @@ a {
 }
 
 /* END | Swat Tool Vue CSS */
-

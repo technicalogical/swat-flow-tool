@@ -18,8 +18,8 @@
     <div class="content " id="flow-start-message">
 
       <!-- BEGIN Home page logo section -->
-      <div id="logo-main" class="content">
-        <img src="../assets/images/sft-logo.png" />
+      <div id="logo-main">
+        
       </div>
       <!-- END Home page logo section -->
 
@@ -68,4 +68,4 @@ export default {
 }
 </script>
 
-<style src="../flow-style.scss" ></style>
+<style></style>
