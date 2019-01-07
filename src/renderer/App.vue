@@ -9,7 +9,9 @@
     <!-- END - Font Awesome & Google Font support option -->
 
     <!-- BEGIN - Application top links section -->
-
+    <div id="time">
+      <p id="clock"></p>
+    </div>
     <!-- Button to close the app -->
     <div id="app-top-links">
 
@@ -27,16 +29,7 @@
             <i class="fas fa-times fa-lg"></i>
           </span> 
         </a>
-      </p>
-
-      <!-- Button to access settings page page --> 
-      <router-link id="settings-one" to="/SwatSettings" class="button is-white is-small">
-        <span class="icon is-small">
-          <i class="fas fa-sliders-h fa-lg"></i>
-        </span>
-        
-      </router-link>
-      
+      </p>    
     </div>
     <!-- END - Application top links section -->
 
@@ -69,7 +62,7 @@
           </a>
         </p>
         <div id="footer-img"></div>
-        <p id="app-vers" class="is-italic"><strong>SWAT</strong> Flow Tool Beta ver <strong>1.1.27</strong> (<strong>Windu</strong>)</p>  
+        <p id="app-vers" class="is-italic"><strong>Beta</strong> ver <strong>1.1.27</strong> (<strong>Windu</strong>)</p>  
       </footer>
     <!-- END - Application footer section -->
   </div>
@@ -93,9 +86,15 @@ export default {
     ]),
   },
 };
-  // export default {
-    
-  // }
+
+var myVar = setInterval(function() {
+  myTimer();
+}, 1000);
+
+function myTimer() {
+  var d = new Date();
+  document.getElementById("clock").innerHTML = d.toLocaleTimeString();
+}
 </script>
 
 <style src="./flow-style.scss" ></style>

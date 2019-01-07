@@ -18,47 +18,46 @@
     <!-- START Opening comments for Swat FLow Chart -->
     <div id="flow-start-message" class="content is-small">
       <div class="notification is-dark">
-        This is the hosting <strong>Swat Flow Chart</strong>. It is designed to guide you quickly through the most common issues our customers have when calling in. This Swat Flow Chart can also be found at <a href="https://x.co/swat" target="_blank"><strong>x.co/swat</strong></a>. Start with your options below to begin to work your way through the flow chart.
+        These are the <strong>Swat Flow Charts</strong>, designed to guide you quickly through the most common issues our customers are facing. Get started by selecting a common error below.
       </div>
     </div>
     <!-- END Opening comments for Swat Flow Chart -->
 
     <!-- BEGIN - Primary application deck -->
     <div class="content" id="flow">
-      <div class="content is-small" id="flow-deck-two">
-        <p>Get started by selecting a common error below.</p>
+      <div class="content" id="flow-deck-two">
         <p class="buttons">
-          <router-link to="/flow/FiveError" class="button is-light">
+          <router-link to="/flow/FiveError" class="button is-dark is-small">
             <span class="icon has-text-success">
               <i class="fas fa-play-circle"></i>
             </span>
             <span><strong>500 Error</strong> W.S.O.D. (white screen of death)</span>
           </router-link>  
-          <router-link to="/flow/FourThree" class="button is-light">
+          <router-link to="/flow/FourThree" class="button is-dark is-small">
             <span class="icon has-text-success">
               <i class="fas fa-play-circle"></i>
             </span>
             <span><strong>403</strong> Website Error</span>
           </router-link>
-          <router-link to="/flow/FourFour" class="button is-light">
+          <router-link to="/flow/FourFour" class="button is-dark is-small">
             <span class="icon has-text-success">
               <i class="fas fa-play-circle"></i>
             </span>
             <span><strong>404</strong> Website Error</span>
           </router-link>
-          <router-link to="/flow/FiveThree" class="button is-light">
+          <router-link to="/flow/FiveThree" class="button is-dark is-small">
             <span class="icon has-text-success">
               <i class="fas fa-play-circle"></i>
             </span>
             <span><strong>503</strong> Server Response Error</span>
           </router-link>
-          <router-link to="/flow/FormError" class="button is-light">
+          <router-link to="/flow/FormError" class="button is-dark is-small">
             <span class="icon has-text-success">
               <i class="fas fa-play-circle"></i>
             </span>
             <span><strong>Form Mail</strong> Issues</span>
           </router-link>
-          <router-link to="/flow/SslError" class="button is-light">
+          <router-link to="/flow/SslError" class="button is-dark is-small">
             <span class="icon has-text-success">
               <i class="fas fa-play-circle"></i>
             </span>
