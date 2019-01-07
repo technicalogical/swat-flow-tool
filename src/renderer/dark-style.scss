@@ -19,7 +19,7 @@ body {
   width: 450px;
   font-family: 'Open Sans', sans-serif;
   border: 1px solid hsl(217, 71%, 53%);
-  background-color: #1a1a1a
+  background-color: #262626;
 }
 
 html{
@@ -328,12 +328,19 @@ footer {
 
 #swat-note-input {
   position: relative;
+  display: block;
   margin: 0px;
-  margin-left: 20px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0px;
   border: 0px;
   width: 70%;
   height: 300px;
+}
+
+#swat-note-input input, 
+#swat-note-input textarea {
+  background-color: #efefef;
 }
 
 #sitchnotes {
@@ -342,13 +349,20 @@ footer {
 
 #call-notes {
   position: relative;
+  display: block;
+  top: 25px;
   margin: 0px;
-  margin-left: 20px;
-  padding: 0px;
-  border: 0px;
-  width: 90%;
-  height: 130px;
-  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  background-color: #efefef;
+  border-radius: 4px;
+  width: 70%;
+  height: 170px;
+  overflow: scroll;
+  -ms-overflow-style: scrollbar;
+  -webkit-app-region: no-drag;
+  color: #262626;
 }
 
 #call-notes p { 
@@ -356,16 +370,22 @@ footer {
   font-size: 12px;
 }
 
+#call-notes section {
+  text-align: left;
+}
+
 #note-buttons {
-  position: absolute;
+  position: relative;
+  top: 35px;
+  display: block;
   bottom: 0px;
   margin: 0px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0px;
   border: 0px;
-  width: 90%;
-  height: 35px;
+  width: 70%;
+  height: 30px;
 }
 
 #closed {

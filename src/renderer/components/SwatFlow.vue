@@ -4,7 +4,7 @@
   <div id="swat-deck" class="hello">
 
     <!-- BEGIN - Application Primary nav section -->
-    <nav class="tabs is-small">
+    <nav class="tabs is-small is-centered">
       <ul>
         <li><router-link to="/">Home</router-link></li>
         <li class="is-active"><router-link to="/SwatFlow">Swat Flow</router-link></li>

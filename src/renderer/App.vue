@@ -18,7 +18,7 @@
       <!-- Button to link to CRM --> 
       <a id="crm-icon" href="https://x.co/webcrm" title="Launch CRM" target="_blank" class="button is-white is-small">
         <span class="icon is-small">
-          <i class="fas fa-search fa-lg"></i>
+          <i class="fas fa-th fa-lg"></i>
         </span>
       </a>
 
@@ -82,7 +82,8 @@ export default {
       'name',
       'sitch',
 	    'domain',
-	    'method',
+      'method',
+      'selected'
     ]),
   },
 };

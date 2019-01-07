@@ -1,10 +1,10 @@
 <template>
   
   <!-- BEGIN - Primary application deck -->
-  <div id="note-deck">
+  <form id="note-deck">
 
     <!-- BEGIN - Application Primary nav section -->
-    <nav class="tabs is-small">
+    <nav class="tabs is-small is-centered">
       <ul>
         <li><router-link to="/">Home</router-link></li>
         <li><router-link to="/SwatFlow">Swat Flow</router-link></li>
@@ -16,22 +16,22 @@
     <!-- END - Application Primary nav section -->
 
     <!-- BEGIN Swat Note input section -->
-    <form id="swat-note-input">
-      <p class="help is-danger">THIS PAGE DOES NOT STORE CUSTOMER DATA</p>
+    <div id="swat-note-input" class="content">
+      <p class="help is-danger has-text-weight-bold">THIS PAGE DOES NOT STORE CUSTOMER DATA</p>
       <div class="field">
         <div class="control has-icons-left has-icons-right">
-          <input id="filled1" v-model="name" class="input is-small is-hovered" type="text" placeholder="Customer Name" />
+          <input id="filled1" v-model="name" class="input is-small is-hovered is-info" type="text" placeholder="Customer Name" />
           <span class="icon is-small is-left has-text-dark">
             <i class="fas fa-user"></i>
           </span>
         </div>
       </div>
       <div id="sitch-text" class="control">
-        <textarea id="filled2" v-model="sitch" class="textarea is-small is-hovered has-fixed-size" placeholder="Customer's situation"></textarea>
+        <textarea id="filled2" v-model="sitch" class="textarea is-small is-hovered is-info has-fixed-size" placeholder="Customer's situation"></textarea>
       </div>
       <div class="field">
         <div class="control has-icons-left has-icons-right">
-          <input id="filled3" v-model="domain" class="input is-small is-hovered" type="text" placeholder="Domain(s)" />
+          <input id="filled3" v-model="domain" class="input is-small is-info" type="text" placeholder="Domain(s)" />
           <span class="icon is-small is-left has-text-dark">
             <i class="fas fa-globe"></i>
           </span>
@@ -39,24 +39,19 @@
         <p class="help is-info">Seperate multiple domains with commas.</p>
       </div>
       <div class="field">
-        <div class="control">
-          <div class="select is-small">
-            <select id="methods" v-model="selected">
-              <option disabled value="testing">Please select one</option>
-              <option>A</option>
-              <option>B</option>
-              <option>C</option>
-            </select>
-          </div>
+        <div class="control has-icons-left has-icons-right">
+          <input id="filled4" v-model="method" class="input is-small is-info" type="text" placeholder="Flow method" />
+          <span class="icon is-small is-left has-text-dark">
+            <i class="far fa-file-alt"></i>
+          </span>
+          <p class="help is-info">List which flows you used to resolve issue.</p>
         </div>
       </div>
-    </form>
-
+    </div>
     <!-- END Swat Note input section -->
-    <p id="closed" class="is-danger"><strong>THIS PAGE IS NOT ACTIVE.</strong></p>
+    
     <!--  BEGIN Copy paste notes section -->
-
-    <div id="call-notes">
+    <div id="call-notes" class="content is-info">
       
       <p>#SWAT</p>
       <p>Customer name: {{ name }} </p>
@@ -67,28 +62,28 @@
     </div>
     <!-- END Copy paste notes section -->
 
-    <!-- BEGIN Note buttons section -->
+      <!-- BEGIN Note buttons section -->
       <p id="note-buttons" class="buttons">
-      <button class="button is-small is-dark" value="" v-clipboard:copy="'#SWAT ' 
-      + ' Name: ' + name
-      + ' Situation: ' + sitch
-      + ' Domain: ' + domain
-      + ' Method: ' + method">
-        <span class="icon has-text-success">
-          <i class="fas fa-clipboard"></i>
-        </span>
-        <span>Copy to Clipboard</span>
-      </button>
-      <button type="button" value="" class="button is-small is-danger" onclick="document.getElementById('filled1').value = ''" >
-        <span class="icon">
-          <i class="fas fa-times-circle"></i>
-        </span>
-        <span><strong>RESET</strong></span>
-      </button> 
-    </p>
-    <!-- END Note buttons section -->
+        <button class="button is-small is-dark" value="" v-clipboard:copy="'#SWAT ' 
+        + ' Name: ' + name
+        + ' Situation: ' + sitch
+        + ' Domain: ' + domain
+        + ' Method: ' + method">
+          <span class="icon has-text-success">
+            <i class="fas fa-clipboard"></i>
+          </span>
+          <span>Copy to Clipboard</span>
+        </button>
+        <button type="button" value="" class="button is-small is-danger" onclick="document.getElementById('note-deck').reset()" >
+          <span class="icon">
+            <i class="fas fa-times-circle"></i>
+          </span>
+          <span><strong>RESET</strong></span>
+        </button> 
+      </p>
+      <!-- END Note buttons section -->
 
-  </div>
+  </form>
   <!-- END - Primary application deck -->
     
 </template>
