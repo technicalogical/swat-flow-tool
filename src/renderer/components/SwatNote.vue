@@ -20,19 +20,19 @@
       <p class="help is-danger has-text-weight-bold">THIS PAGE DOES NOT STORE CUSTOMER DATA</p>
       <div class="field">
         <div class="control has-icons-left has-icons-right">
-          <input id="filled1" v-model="name" class="input is-small is-hovered is-info" type="text" placeholder="Customer Name" />
-          <span class="icon is-small is-left has-text-dark">
+          <input id="filled1" v-model="name" class="input is-small" type="text" placeholder="Customer Name" />
+          <span class="icon is-small is-left has-text-success">
             <i class="fas fa-user"></i>
           </span>
         </div>
       </div>
       <div id="sitch-text" class="control">
-        <textarea id="filled2" v-model="sitch" class="textarea is-small is-hovered is-info has-fixed-size" placeholder="Customer's situation"></textarea>
+        <textarea id="filled2" v-model="sitch" class="textarea is-small has-fixed-size" placeholder="Customer's situation"></textarea>
       </div>
       <div class="field">
         <div class="control has-icons-left has-icons-right">
-          <input id="filled3" v-model="domain" class="input is-small is-info" type="text" placeholder="Domain(s)" />
-          <span class="icon is-small is-left has-text-dark">
+          <input id="filled3" v-model="domain" class="input is-small" type="text" placeholder="Domain(s)" />
+          <span class="icon is-small is-left has-text-success">
             <i class="fas fa-globe"></i>
           </span>
         </div>
@@ -40,8 +40,8 @@
       </div>
       <div class="field">
         <div class="control has-icons-left has-icons-right">
-          <input id="filled4" v-model="method" class="input is-small is-info" type="text" placeholder="Flow method" />
-          <span class="icon is-small is-left has-text-dark">
+          <input id="filled4" v-model="method" class="input is-small" type="text" placeholder="Flow method" />
+          <span class="icon is-small is-left has-text-success">
             <i class="far fa-file-alt"></i>
           </span>
           <p class="help is-info">List which flows you used to resolve issue.</p>

@@ -18,7 +18,7 @@
       <!-- Button to link to CRM --> 
       <a id="crm-icon" href="https://x.co/webcrm" title="Launch CRM" target="_blank" class="button is-white is-small">
         <span class="icon is-small">
-          <i class="fas fa-th fa-lg"></i>
+          <i class="fas fa-search fa-lg"></i>
         </span>
       </a>
 
@@ -62,7 +62,7 @@
           </a>
         </p>
         <div id="footer-img"></div>
-        <p id="app-vers" class="is-italic"><strong>Beta</strong> ver <strong>1.1.27</strong> (<strong>Windu</strong>)</p>  
+        <p id="app-vers" class="is-italic"><strong>Beta</strong> ver <strong>1.1.31</strong> (<strong>Windu</strong>)</p>  
       </footer>
     <!-- END - Application footer section -->
   </div>

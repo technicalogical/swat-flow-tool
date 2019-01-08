@@ -1,0 +1,129 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js install
+
+PATH: 
+  C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\maceg\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin;C:\Users\maceg\AppData\Local\Microsoft\WindowsApps;C:\Users\maceg\AppData\Roaming\npm;C:\Users\maceg\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\maceg\AppData\Local\Yarn\bin
+
+Yarn version: 
+  1.12.3
+
+Node version: 
+  10.14.2
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EBUSY: resource busy or locked, unlink 'C:\Users\maceg\Desktop\swat-flow-tool\node_modules\electron\dist\chrome_200_percent.pak'
+
+npm manifest: 
+  {
+    "name": "swat-flow-tool",
+    "version": "1.1.31",
+    "author": "macegd",
+    "description": "A Flow Tool Project",
+    "license": "MIT",
+    "main": "./dist/electron/main.js",
+    "scripts": {
+      "build": "node .electron-vue/build.js && electron-builder",
+      "build:dir": "node .electron-vue/build.js && electron-builder --dir",
+      "build:clean": "cross-env BUILD_TARGET=clean node .electron-vue/build.js",
+      "build:web": "cross-env BUILD_TARGET=web node .electron-vue/build.js",
+      "dev": "node .electron-vue/dev-runner.js",
+      "pack": "npm run pack:main && npm run pack:renderer",
+      "pack:main": "cross-env NODE_ENV=production webpack --progress --colors --config .electron-vue/webpack.main.config.js",
+      "pack:renderer": "cross-env NODE_ENV=production webpack --progress --colors --config .electron-vue/webpack.renderer.config.js",
+      "postinstall": ""
+    },
+    "build": {
+      "productName": "S.W.A.T. Flow Tool (Beta)",
+      "appId": "swat.flowtool",
+      "directories": {
+        "output": "build"
+      },
+      "files": [
+        "dist/electron/**/*"
+      ],
+      "dmg": {
+        "contents": [
+          {
+            "x": 410,
+            "y": 150,
+            "type": "link",
+            "path": "/Applications"
+          },
+          {
+            "x": 130,
+            "y": 150,
+            "type": "file"
+          }
+        ]
+      },
+      "mac": {
+        "icon": "build/icons/icon.icns"
+      },
+      "win": {
+        "icon": "src/renderer/assets/icons/win/icon.png"
+      },
+      "linux": {
+        "icon": "build/icons"
+      }
+    },
+    "dependencies": {
+      "axios": "^0.18.0",
+      "bulma": "^0.7.2",
+      "vue": "^2.5.16",
+      "vue-clipboard2": "^0.2.1",
+      "vue-electron": "^1.0.0",
+      "vue-router": "^3.0.1",
+      "vue-select": "^2.5.1",
+      "vuex": "^3.0.1",
+      "vuex-map-fields": "^1.3.1"
+    },
+    "devDependencies": {
+      "@fortawesome/fontawesome-free": "^5.6.3",
+      "ajv": "^6.5.0",
+      "babel-core": "^6.26.3",
+      "babel-loader": "^7.1.4",
+      "babel-plugin-transform-runtime": "^6.23.0",
+      "babel-preset-env": "^1.7.0",
+      "babel-preset-stage-0": "^6.24.1",
+      "babel-register": "^6.26.0",
+      "babili-webpack-plugin": "^0.1.2",
+      "cfonts": "^2.1.2",
+      "chalk": "^2.4.1",
+      "copy-webpack-plugin": "^4.5.1",
+      "cross-env": "^5.1.6",
+      "css-loader": "^0.28.11",
+      "del": "^3.0.0",
+      "devtron": "^1.4.0",
+      "electron": "^4.0.1",
+      "electron-builder": "^20.38.4",
+      "electron-debug": "^1.5.0",
+      "electron-devtools-installer": "^2.2.4",
+      "file-loader": "^1.1.11",
+      "html-webpack-plugin": "^3.2.0",
+      "mini-css-extract-plugin": "0.4.0",
+      "multispinner": "^0.2.1",
+      "node-loader": "^0.6.0",
+      "style-loader": "^0.21.0",
+      "url-loader": "^1.0.1",
+      "vue-html-loader": "^1.2.4",
+      "vue-loader": "^15.2.4",
+      "vue-style-loader": "^4.1.0",
+      "vue-template-compiler": "^2.5.16",
+      "webpack": "^4.15.1",
+      "webpack-cli": "^3.0.8",
+      "webpack-dev-server": "^3.1.4",
+      "webpack-hot-middleware": "^2.22.2",
+      "webpack-merge": "^4.1.3"
+    },
+    "repository": "https://github.com/macegd/swat-flow-tool.git",
+    "private": false
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
