@@ -19,7 +19,9 @@ new Vue({
   
   data: function () {
     return {
-      message: 'Copy These Text'
+      message: 'Copy These Text',
+      albums: [],
+      info: null,
     }
   },
   methods: {
@@ -29,6 +31,20 @@ new Vue({
     onError: function (e) {
       alert('Failed to copy texts')
     }
+  },
+  mounted(){ 
+    axios
+      .get('https://api.coindesk.com/v1/bpi/currentprice.json')
+      .then(response => (this.info = response))
+      
+    axios.get('https://jsonplaceholder.typicode.com/albums')
+    .then(response =>{
+ this.albums = response.data;
+ console.log("Albums: " + this.albums);
+ })
+ .catch(error =>{
+ console.log(error);
+})
   }
 })
 Vue.use(Vuex);
@@ -52,6 +68,7 @@ const store = new Vuex.Store({
     updateField,
   },
 });
+
 
 
 /* eslint-disable no-new */
